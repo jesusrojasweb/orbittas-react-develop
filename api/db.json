@@ -1,0 +1,126 @@
+{
+  "proyectos": [
+    {
+      "id": 1,
+      "link": "p4b-pasion-por-el-balon",
+      "nombre": "P4b",
+      "caracteristicas": "Html/CSS/Wordpress",
+      "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-p4b.png",
+      "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+      "slogan": "Pasión por el balón",
+      "details": {
+              "experiencia": "Html / CSS3, Wordpress, Responsive Design",
+              "servicio": "Desarrollo Web",
+              "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+              "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+              "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+              "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+              
+          }
+
+
+    },
+    {
+      "id": 2,
+      "link": "tenneco",
+      "nombre": "Tenneco",
+      "caracteristicas": "AndroidStudio",
+      "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-tenneco.png",
+      "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+      "slogan": "Slogan de tenneco",
+      "details": {
+              "experiencia": "Android Studio, Java",
+              "servicio": "Desarrollo movil",
+              "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+              "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+              "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+              "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+              
+          }
+      
+    },
+    {
+      "id": 3,
+      "link": "sistema-de-riego",
+      "nombre": "Sistema de Riego",
+      "caracteristicas": "Angular / HTML / CSS",
+      "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+      "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+      "slogan": "Slogan de CITYVISION",
+      "details": 
+          {
+
+              "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+              "servicio": "Desarrollo Web",
+              "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+              "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+              "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+              "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+          }
+      
+    },
+    {
+      "id": 4,
+      "link": "p4b-pasion-por-el-balon",
+      "nombre": "P4b",
+      "caracteristicas": "Html/CSS/Wordpress",
+      "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-p4b.png",
+      "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+      "slogan": "Pasión por el balón",
+      "details": {
+              "experiencia": "Html / CSS3, Wordpress, Responsive Design",
+              "servicio": "Desarrollo Web",
+              "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+              "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+              "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+              "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+              
+          }
+      
+
+
+    },
+    {
+      "id": 5,
+      "link": "tenneco",
+      "nombre": "Tenneco",
+      "caracteristicas": "AndroidStudio",
+      "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-tenneco.png",
+      "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+      "slogan": "Slogan de tenneco",
+      "details": {
+              "experiencia": "Android Studio, Java",
+              "servicio": "Desarrollo movil",
+              "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+              "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+              "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+              "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+              
+          }
+      
+    },
+    {
+      "id": 6,
+      "link": "sistema-de-riego",
+      "nombre": "Sistema de Riego",
+      "caracteristicas": "Angular / HTML / CSS",
+      "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+      "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+      "slogan": "Slogan de CITYVISION",
+      "details": 
+          {
+
+              "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+              "servicio": "Desarrollo Web",
+              "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+              "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+              "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+              "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+          }
+      
+    }
+  ],
+  "servicios": [
+    
+  ]
+}

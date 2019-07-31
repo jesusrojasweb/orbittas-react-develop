@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>ORBITTAS - Agencia Digital</title>
+</head>
+<body>
+    <div id="app"></div>
+    <noscript>
+        <h3>Esta app necesita Javascript para funcionar</h3>
+    </noscript>
+    <script>
+        if('serviceWorker' in navigator){
+            window.addEventListener('load', function({
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(registration =>{
+                    console.log('SW registrado bien')
+                })
+                .cath(registrationError => {
+                    console.log('SW error', registrationError)
+                })
+             }))
+         }
+    </script>
+</body>
+</html>
