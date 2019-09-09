@@ -1,11 +1,15 @@
 import styled,{createGlobalStyle} from 'styled-components'
 import {Link} from '@reach/router'
 import {Margen} from "../../styles/Styles";
-import {colorPrincipal, tablet, mobile, fuentePrincipal, fuenteSecundaria} from "../../styles/variables";
+import {colorPrincipal, tablet, mobile, fuentePrincipal, fuenteSecundaria, min} from "../../styles/variables";
+import {floating, floatingLeftAngle} from "../../styles/animations";
 
 export const Body = createGlobalStyle`
   body{
     overflow: hidden;
+    @media(${tablet}){
+      overflow: scroll;
+    }
   }
 `
 
@@ -34,6 +38,9 @@ export const Grid = styled.div`
     padding: 7em 3em 4em;
     grid-gap: 1em;
   }
+  @media(${min}){
+    height: auto;
+  }
 `
 export const Volver = styled(Link)`
   position: absolute;
@@ -43,12 +50,14 @@ export const Volver = styled(Link)`
   bottom: 2em;
   text-decoration: none;
   z-index: 900;
+  ${floatingLeftAngle()}
   @media(${tablet}){
     bottom: inherit;
     top: 6em;
   }
   @media(${mobile}){
     left: 1em;
+    top: 2.8em;
   }
   &:hover{
     background: none;
@@ -111,6 +120,7 @@ export const Boton = styled.a`
 export const Icono = styled.span`
   width: 4%;
   margin-left: 1em;
+  ${floating()}
   @media(${mobile}){
     width: 8%;
   }

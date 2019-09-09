@@ -25,6 +25,7 @@ export const Grid = styled.div`
   @media(${mobile}){
     height: auto !important;
     padding-bottom: 6em;
+    display: block;
   }
   @media(min-width: 1420px){
     height: 700px;
@@ -33,7 +34,7 @@ export const Grid = styled.div`
     grid-template-columns: 1fr;
   }
   @media(${mobile}){
-    padding-top: 4em;
+    padding-top: 2em;
     height: auto;
     & .item{
       /*width: 80%;*/
@@ -43,39 +44,60 @@ export const Grid = styled.div`
 
 export const Animanos = styled.h2`
   color: ${colorPrincipal};
-  font-family: ${fuentePrincipal};
+  font-size: 1.5rem;
+  text-transform: uppercase;
   font-size: 2rem;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   @media(${mobile}){
     font-size: 1.2rem;
   }
 `
-
+export const Boton = styled.div`
+  @media(${mobile}){
+    order: -1;
+    margin-bottom: 2em;
+  }
+`
 export const Btn = styled(Link)`
     ${btn()}
     ${gradient()}
+    border-color: rgb(0,121,147);
 `
 export const Informacion = styled.div`
   display: flex;
-  width: 80%;
+  width: 75%;
   justify-content: space-between;
   margin-top: 2em;
   text-align: center
   @media(${mobile}){
     width: 100%;
     margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `
 
 export const Info = styled.ul`
   list-style: none;
+  @media(${mobile}){
+    margin: 1em 0;
+  }
+  & li{
+    display: flex;
+    align-items: center;
+    & svg{
+      margin-right: .5em;
+    }
+  }
 `
 
 export const Iconos = styled.div`
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-gap: 5em;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 2em;
   margin-bottom: 2em;
+  padding: 0 7em;
   @media(${tablet}){
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em 5em;
@@ -83,16 +105,20 @@ export const Iconos = styled.div`
   @media(${mobile}){
     grid-template-columns: 25vw 25vw !important;
     justify-content: center;
+    margin-bottom: 0;
+
   }
   @media(min-width: 1420px){
     grid-gap: 2em;
   }
 `
 export const IconosItem = styled.div`
-  background: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `
 export const Icono = styled.div`
-  background: none;
+  width: 80%;
 `
 export const Caracteristica = styled.div`
   background: none;
@@ -130,63 +156,27 @@ export const GridItem = styled.div`
   }
 `
 
-export const Sociales = styled.ul`
-  display: flex;
-  list-style: none;
-  width: 100%;
-  margin-top: 8em;
-  flex-direction: column;
-  align-items: center;
-  @media(${tablet}){
-    flex-direction: row;
-    margin-top: 0;
-    justify-content: space-around;
-  }
-`
-export const Tiptext = styled.span`
-  visibility: hidden;
-  background: black;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  padding: 6px 1em;
-  position: absolute;
-  z-index: 1;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  top: -9px;
-  right: 125%;
-  font-size: 1rem;
-  opacity: 0;
-  transition: .3s;
-  width: 8em
-`
-
-export const Tooltip = styled.a`
-  color: ${colorPrincipal};
-  font-size: 2.5rem;
-  position: relative;
-  &:hover ${Tiptext}{
-    visibility: visible;
-    opacity: 1;
-  }
-`
-
 export const Footer = styled.footer`
   display: flex;
   flex-direction: column;
   align-content: center;
   grid-column: 2 span;
-  background: ${colorPrincipal};
+  background: none;
   position: absolute;
   width: 100%;
   bottom: 0;
   padding: 1em;
   box-sizing: border-box;
+  padding-right: 9em;
+  @media(${mobile}){
+    left: 0;
+    padding-right: 1em;
+  }
 `
 export const Copy = styled.p`
   display: flex;
   justify-content: center;
-  color: white;
+  color: ${colorPrincipal};
   margin: 0;
 `
 

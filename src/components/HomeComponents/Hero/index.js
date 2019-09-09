@@ -1,16 +1,22 @@
 import React, {useState, useEffect} from 'react'
 import {Particulas,Propulcion, Robot ,Hero, Copy, Item, Container, Btn, Cursor, Subitle, Title} from "./styles";
 import Particles from 'react-particles-js'
+import {useTranslate} from 'react-translate'
 
 
 function escritura(palabra){
   const [word, setWord] = useState('');
+  const [chagedWord, setChangedWord] = useState(false)
   let palabraContador = word;
   let count = 0;
   let interval;
   useEffect(function(){
     interval = setInterval(function() {escribir(palabra)}, 100)
-  }, [false])
+  }, [chagedWord])
+  
+  function changeWord(otraPalabra) {
+    setChangedWord(true)
+  }
 
   let escribir = (palabra)=>{
     let array = palabra.split('');
@@ -24,7 +30,7 @@ function escritura(palabra){
       count = 0
     }
   }
-  return [word]
+  return [word, changeWord]
 }
 const particles = {
     "particles":
@@ -102,20 +108,29 @@ const particles = {
               },
               "retina_detect":true}
 
-export const HeroHome = ()=>{
-  const [word] = escritura('Nosotros la desarrollamos')
+export const HeroHome = ({idioma, changed,handleChange})=>{
+  let t = useTranslate('heroHomePage')
+  let tagline = t('tagline');
+  const [word,changeWord] = escritura(tagline)
+
   return (
     <Hero>
 
       <Particulas
         params= {particles}
       />
-      <Copy>
+      <Copy idioma={idioma}>
         <Item>
-          <Title><b>¿</b>Tienes <br/> una <strong>idea?</strong></Title>
-          <Subitle><span>{word}</span><Cursor></Cursor></Subitle>
+          <Title><b>¿</b>{t('titleFirst')} <br/> {t('titleSecond')} <strong>{t('titleThird')}?</strong></Title>
+          {
+            changed
+              ?  <Subitle><span>{tagline}</span><Cursor></Cursor></Subitle>
+              : <Subitle><span>{word}</span><Cursor></Cursor></Subitle>
+          }
+          
           <Container>
-            <Btn to="/contact">¡Innovemos!</Btn>
+            <Btn to={`/contact`}>{t('button')}</Btn>
+            {/*<Btn to={`/contact`}>¡{t('button')}!</Btn>*/}
           </Container>
 
         </Item>
@@ -132,3 +147,4 @@ export const HeroHome = ()=>{
     </Hero>
   )
 }
+

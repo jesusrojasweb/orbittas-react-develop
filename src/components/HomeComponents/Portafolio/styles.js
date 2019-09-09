@@ -1,25 +1,32 @@
 import styled from 'styled-components'
-import {colorPrincipal, btn, colorFluerecente} from "../../../styles/variables";
+import {colorPrincipal, btn, colorFluerecente, fuentePrincipal} from "../../../styles/variables";
 import {Margen} from "../../../styles/Styles";
 import {Link} from "@reach/router";
 
 export const Portafolio = styled.section`
   align-items: center;
   position: relative;
-  background: ${colorPrincipal};
+  background: none;
 `
 export const Grid = styled.div`
   ${Margen}
+  height: auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  padding-top: 2em;
+  align-items: flex-start;
+  padding-top: 7em;
+  padding-bottom: 8em;
   justify-content: center;
 `
+export const Title = styled.h2`
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+`
+
 export const Btn = styled(Link)`
   ${btn}
   z-index: 1000;
-  margin-right: 3em;
   &:hover{
     border-color: ${colorFluerecente};
     background: ${colorFluerecente};

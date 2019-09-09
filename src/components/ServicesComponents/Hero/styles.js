@@ -35,7 +35,8 @@ export const Contenedor = styled.div`
     }
   }
   @media(${mobile}){
-    grid-gap: 1em;  
+    grid-gap: 1em;
+    grid-template-rows: 8em 1fr;  
   }
 `
 export const Grid = styled.div`
@@ -61,15 +62,15 @@ export const Title = styled.h1`
   line-height: 1em;
   @media(${mobile}){
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 `
 export const Spacing = styled.span`
   letter-spacing: -25px;
   margin-right: 25px;
   @media(${mobile}){
-    letter-spacing: -13px;
-    margin-right: 13px;
+    letter-spacing: -13px !important;
+    margin-right: 13px !important;
   }
 `
 export const Ancho = styled.span`

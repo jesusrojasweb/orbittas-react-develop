@@ -1,7 +1,19 @@
 import styled, {css} from 'styled-components'
 import {Link} from '@reach/router'
-import {fuentePrincipal,colorPrincipal, tablet, mobile} from '../../styles/variables'
+import {fuentePrincipal,colorPrincipal, tablet, mobile, desktop} from '../../styles/variables'
 
+export const Idioma = styled.button`
+  // width: 50px;
+  background: none;
+  padding: none;
+  border: none;
+  margin-left: 2em;
+  cursor: pointer;
+  color: #598bfe;
+  &:focus{
+    outline: none;
+  }
+`
 
 export const Contenedor = styled.div`
   display: flex;
@@ -12,7 +24,7 @@ export const Contenedor = styled.div`
   box-sizing: border-box;
   z-index: 1200;
   position: relative;
-  max-width: 1420px;
+  max-width: 1220px;
   @media(${mobile}){
     width: calc(100% - 5em);
   }
@@ -44,13 +56,14 @@ export const Navbar = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  align-items: center;
 `
 export const MenuList = styled.div`
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   transition: 1s;
-
+  align-items: center;
   @media(${tablet}){
     position: fixed;
     left: 0;
@@ -139,18 +152,29 @@ export const Header = styled.header`
         width: 30%;
       }
     }
-    & ${Item}{
-      font-size: 1rem;
+    @media(${desktop}){
+      & ${Item}{
+        font-size: 1rem;
+      }
+      
     }
     & ${Burger} {
       font-size: 1rem;
     }
   `}
-  ${({fondo, scroll}) => ((fondo != '/') && !scroll  ) && css`
+  ${({fondo, scroll}) => (fondo != '/') && (!scroll) && css`
     & ${Contenedor}{
       & ${Navbar}{
         & ${MenuList}{
-          filter: brightness(0) invert(1);
+          & ${Idioma}{
+            color: #a5c0ff;
+          }
+          & ${Item}{
+            color: white;
+            &:after{
+              background: white;
+            }
+          }
           @media(${tablet}){
             filter: none;
             background:#fff;

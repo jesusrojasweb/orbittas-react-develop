@@ -1,6 +1,7 @@
 import styled, {css} from 'styled-components'
 import {Margen} from "../../styles/Styles";
-import {colorPrincipal, tablet, mobile, fuentePrincipal} from "../../styles/variables";
+import {colorPrincipal, tablet, mobile, fuentePrincipal,btn,gradient} from "../../styles/variables";
+import {Link} from '@reach/router'
 
 export const Item = styled.div`
   background: none;
@@ -17,6 +18,13 @@ export const Grid = styled.div`
   }
   @media(${mobile}){
     padding-top: 2em;
+    padding-bottom: 0;
+  }
+`
+export const Img = styled.img`
+  background: none;
+  @media(${tablet}){
+    display: none;
   }
 `
 export const Servicio = styled.section`
@@ -31,16 +39,12 @@ export const Servicio = styled.section`
         }
       }
     }
-    & img{
+    & ${Img}{
       margin-left: -6em;
-      @media(${mobile}){
-        margin-left: -3em;
-        width: 122%
-      }
     }
   `}
   ${props => props.right && css`
-    & img{
+    & ${Img}{
       margin-left: 6em;
       @media(${mobile}){
         margin-left: 0 !important;
@@ -57,6 +61,9 @@ export const Head = styled.div`
 export const Icono = styled.div`
   width: 10%;
   margin-right: 2em;
+  &:nth-of-type(1){
+    width: 8%;
+  }
   @media(${mobile}){
     width: 10%;
     margin-right: .5em;
@@ -73,6 +80,7 @@ export const Nombre = styled.h3`
 export const Lista = styled.ul`
   list-style: none;
   padding-left: 2em;
+  margin-bottom: 2em;
 `
 export const ListItem = styled.li`
   padding-bottom: 1em;
@@ -92,3 +100,9 @@ export const ListItem = styled.li`
   }
 `
 
+export const Btn = styled(Link)`
+  ${btn}
+  ${gradient()}
+  color: white;
+  border: none;
+`

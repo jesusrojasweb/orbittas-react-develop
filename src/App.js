@@ -1,6 +1,7 @@
 import React, {Fragment, useState, Suspense} from 'react'
+import {TranslatorProvider} from 'react-translate'
 import ReactDOM from 'react-dom'
-import {Router} from '@reach/router'
+import {Router, Redirect} from '@reach/router'
 import {GlobalStyle} from './styles/GlobalStyles'
 import {FontAwesome} from './styles/fontawesome'
 import {Fuentes} from './styles/fuentes'
@@ -20,23 +21,46 @@ const Portfolio = React.lazy(()=> import('./pages/Portfolio'))
 const Contact = React.lazy(()=> import('./pages/Contact'))
 const Proyect = React.lazy(()=> import('./pages/Proyect'))
 
+let contador = 0
 export const App = ()=> {
   const [ruta, setRuta] = useState(null)
-  return(
-    <Suspense fallback={<Loading/>}>
-      <GlobalStyle/>
-      <Fuentes/>
-      <Menu index={ruta} />
-      <Router>
+  const [idiomaChanded, setIdiomaChanded] = useState(false)
+  let language = navigator.language
+  let otroIdioma = language.split('-')
+  let inicioDeIdioma
+  const [idioma, setIdioma] = useState(otroIdioma[0] === 'es' ? false : true)
+  
+  const [lang, setLang] = useState(idioma ? 'en' : 'es')
 
-        <Home path='/'/>
-        <About path='/about'/>
-        <Services path='/services'/>
-        <Portfolio path='/portfolio'/>
-        <Contact path='/contact'/>
-        <Proyect path='/portfolio/:id' handleRuta={setRuta} />
-        <Loading path='/cargando' />
-      </Router>
-    </Suspense>
+  function handleIdioma(argumento) {
+    if(!argumento){
+      setIdioma(false)
+      setIdiomaChanded(true)
+      setLang('es')
+    }
+    if(argumento){
+      setIdioma(true)
+      setIdiomaChanded(true)
+      setLang('en')
+    }
+  }
+
+  let traduccion = require(`./assets/i18n/${lang}.json`)
+  return(
+    <TranslatorProvider translations={traduccion}>
+      <Suspense fallback={<Loading/>}>
+        <GlobalStyle/>
+        <Fuentes/>
+        <Menu index={ruta} lang={lang} changeIdioma={handleIdioma} idioma={idioma}/>
+        <Router>
+          <Home changed={idiomaChanded} handleChange={setIdiomaChanded}  idioma={idioma} path={`/`}/>
+          <About idioma={idioma} lang={lang} path={`/about`} />
+          <Services idioma={idioma} lang={lang} path={`/services`} />
+          <Portfolio lang={lang} path={`/portfolio`} />
+          <Contact lang={lang} path={`/contact`} />
+          <Proyect lang={idioma} path={`/portfolio/:link`} handleRuta={setRuta}  />
+        </Router>
+      </Suspense>
+    </TranslatorProvider>
   )
 }

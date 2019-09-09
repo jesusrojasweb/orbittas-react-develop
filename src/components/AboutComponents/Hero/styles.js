@@ -16,6 +16,7 @@ export const Grid = styled.div`
   @media(${mobile}){
     padding: 4em 3em 0;
     height: 100vh !important;
+    grid-template-rows: 8em 1fr;
   }
   @media(${tablet}){
     grid-template-columns: 1fr;
@@ -40,7 +41,7 @@ export const Title = styled.h1`
   margin: 0;
   line-height: 1em;
   @media(${mobile}){
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
 `
 export const Sangria = styled.span`

@@ -1,18 +1,34 @@
-import React from 'react'
-import {Portafolio, Grid, Btn} from "./styles";
+import React,{useState} from 'react'
+import {Portafolio,Title, Grid, Btn} from "./styles";
 import {PortafolioContainer} from "../../PortafolioContainer";
-import {ParticulasFondo} from '../../ParticulasFondo'
-import {proyectos} from '../../../../api/db'
+// import {proyectos} from '../../../../api/db'
+import {useTranslate} from 'react-translate'
+import {ParticulasBajo} from '../../PartitulasBajo'
+import {Conexion} from '../../Conexion'
+import {getItems} from '../../../hooks/getItems'
 
-const proyect = proyectos.slice(0,4)
 
 
-export const PortafolioHome = ()=>(
-  <Portafolio>
-    <ParticulasFondo/>
-    <Grid>
-      <PortafolioContainer proyectos={proyect} pagina={false} />
-      <Btn to={`/portfolio`}>Ver Más</Btn>
-    </Grid>
-  </Portafolio>
-)
+export const PortafolioHome = ()=>{
+  const [loading, setLoading] = useState(false)
+  const [proyectos, errorProyectos] = getItems(`${process.env.URL}/proyectos`,setLoading)
+  const proyect = proyectos.slice(0,4)
+  if(loading){
+    console.log('cargando proyectos')
+  } else{
+    console.log('ya se cargaron los proyectos')
+  }
+
+  let t = useTranslate('portfolioHomePage')
+  return(
+      <Portafolio>
+        <ParticulasBajo/>
+        <Grid>
+          <Title>Conoce algunos de nuestros trabajos</Title>
+          <PortafolioContainer proyectos={proyect} pagina={false} />
+          <Btn to={`/portfolio`}>{t('button')}</Btn>
+        </Grid>
+        <Conexion/>
+      </Portafolio>
+    )
+  }

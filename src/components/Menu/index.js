@@ -1,16 +1,25 @@
 import React, {useState, useEffect} from 'react'
 import {Location} from '@reach/router'
-import {Header, Contenedor, Navbar, MenuList, Item, Logo, Burger, Img, Close} from './styles'
+import {Idioma,Header, Contenedor, Navbar, MenuList, Item, Logo, Burger, Img, Close} from './styles'
 import {onScroll} from '../../hooks/onScroll'
 import {FaBars,FaTimes} from 'react-icons/fa'
+import {useTranslate} from 'react-translate'
 
-
-const MenuComponent = ({index})=>{
+export const Menu = ({index,lang,changeIdioma, idioma})=>{
   const [scroll, setScroll] = onScroll(mover)
   const [show, setShow] = useState(false)
+  let t = useTranslate('menu')
   function mover() {
     const newShowFixed = window.scrollY > 50;
     scroll != newShowFixed && setScroll(newShowFixed)
+  }
+  function click() {
+    // window.scrollBy(0, -window.innerHeight);
+    window.scrollBy({
+      top: -4000,
+      left: 0,
+      behaviour: 'smooth'
+    })
   }
 
   return(
@@ -19,14 +28,23 @@ const MenuComponent = ({index})=>{
         <Header scroll={scroll} fondo={location.pathname} index={index} >
           <Contenedor>
             <Navbar>
-              <Logo to="/">  
+              <Logo to={`/`} onClick={()=>click()}>  
                 <figure><img src="https://jesusrojasweb.github.io/orbittas/img/logo-largo.png" alt="logo"/></figure>
               </Logo>
               <MenuList show={show} onClick={()=> setShow(false)}>
-                <Item to="/about">Quienes somos</Item>
-                <Item to="/services">Servicios</Item>
-                <Item to="/portfolio">Portafolio</Item>
-                <Item to="/contact">Contacto</Item>
+                <Item onClick={()=>click()} to={`/about`}>{t('about')}</Item>
+                <Item onClick={()=>click()} to={`/services`}>{t('services')}</Item>
+                <Item onClick={()=>click()} to={`/portfolio`}>{t('portfolio')}</Item>
+                <Item onClick={()=>click()} to={`/contact`}>{t('contact')}</Item>
+                {
+                  idioma
+                    ? <Idioma onClick={()=> changeIdioma(false)} >
+                        ES
+                      </Idioma>
+                    : <Idioma onClick={()=> changeIdioma(true)} >
+                        EN
+                      </Idioma>
+                }
               </MenuList>
             </Navbar>
 
@@ -43,7 +61,3 @@ const MenuComponent = ({index})=>{
     </Location>
   )
 }
-
-export const Menu = React.memo(MenuComponent,(prevProps, props)=>{
-  return prevProps.index === props.index
-})

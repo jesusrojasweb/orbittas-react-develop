@@ -1,34 +1,40 @@
 
 import React from 'react'
+import {useTranslate} from 'react-translate'
 import {ParticulasBajo} from '../../PartitulasBajo'
 
 import {Hero, Container, Item, Contenedor, Grid, Icono, Title, Spacing, Ancho, Descripcion} from './styles'
 import {HeroProyecto, HeroElec, HeroWeb, HeroMovil} from './Ilustraciones'
+import {smoothScroll} from '../../../hooks/smoothScroll'
 
-export const HeroServicios = ()=>{
+export const HeroServicios = ({idioma})=>{
+  let t = useTranslate('heroServicesPage')
+
   return(
     <Hero>
       <ParticulasBajo/>
       <Container>
         <Contenedor>
           <Item>
-            <Title><Ancho>Tecnologia de</Ancho> <Spacing>va</Spacing>nguardia</Title>
+            { idioma
+              ?  <Title><Ancho>{t('firstTitle')}</Ancho> <br/> {t('secondTitle')}</Title>
+              : <Title><Ancho>{t('firstTitle')}</Ancho><br/> <Spacing>va</Spacing>{t('secondTitle')}</Title>}
           </Item>
           <Item>
-            <Descripcion>En Orbittas desarrollamos proyectos que involucran diferentes áreas de la tecnología, entendiendo que la integración de las mismas es la fuerza del futuro.</Descripcion>
-            <Descripcion>Nuestra diversidad y flexibilidad nos potencia a obtener capacidad de respuesta rápida y ágil ante las demandas actuales.</Descripcion>
+            <Descripcion>{t('firstDescription')}</Descripcion>
+            <Descripcion>{t('secondDescription')}</Descripcion>
             <Grid>
-              <Icono href="#proyectos">
+              <Icono href="#proyecto" onClick={()=> smoothScroll('proyecto',1000)}>
                 <HeroProyecto/>
               </Icono>
-              <Icono href="#electronica">
+              <Icono href="#electronica" onClick={()=> smoothScroll('electronica',1000)}>
                 <HeroElec/>
               </Icono>
-              <Icono href="#web">
+              <Icono href="#web" onClick={()=> smoothScroll('web',1000)}>
                 <HeroWeb/>
 
               </Icono>
-              <Icono href="#movil">
+              <Icono href="#movil" onClick={()=> smoothScroll('movil',1000)}>
                 <HeroMovil/>
 
               </Icono>

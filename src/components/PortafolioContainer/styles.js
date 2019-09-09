@@ -20,6 +20,10 @@ export const Proyectos = styled.div`
     overflow: hidden scroll;
     height: 100%;
     padding-right: 1em;
+    z-index: 800;
+    @media(${mobile}){
+      padding-right: 0;
+    }
     &::-webkit-scrollbar{
       width: 7px;
       margin-left: 1em;

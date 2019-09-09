@@ -2,6 +2,21 @@ import styled, {css, createGlobalStyle} from 'styled-components'
 import {Link} from '@reach/router'
 import {colorPrincipal, mobile, fuentePrincipal,  tablet} from "../../styles/variables";
 import {Margen} from "../../styles/Styles";
+import {HeroProyecto, HeroElec, HeroWeb, HeroMovil} from '../ServicesComponents/Hero/Ilustraciones'
+
+export const ProyectoI = styled(HeroProyecto)`
+  background: none;
+`
+
+export const ElecI = styled(HeroElec)`
+  background:none;
+`
+export const WebI = styled(HeroWeb)`
+  background:none;
+`
+export const MovilI = styled(HeroMovil)`
+  background: none;
+`
 
 export const Body = createGlobalStyle`
   body{
@@ -15,6 +30,7 @@ export const Body = createGlobalStyle`
 export const Portafolio = styled.section`
   background: ${colorPrincipal};
   position: relative;
+  min-height: 100vh;
 `
 export const Grid = styled.div`
   ${Margen}
@@ -24,7 +40,7 @@ export const Grid = styled.div`
   grid-gap: 5em;
   padding-bottom: 3em;
   align-self: top;
-  z-index: 1000;
+  z-index: 800;
   @media(${mobile}){
     grid-template-columns: 1fr;
     height: auto;
@@ -34,7 +50,11 @@ export const Grid = styled.div`
 `
 
 export const Item = styled.div`
-  z-index: 1000;
+  z-index: 800;
+  &:nth-of-type(1){
+    align-self: start;
+    margin-top: 2em;
+  }
 `
 
 export const Menu = styled.ul`
@@ -43,6 +63,7 @@ export const Menu = styled.ul`
   @media(${mobile}){
     display: flex;
     flex-flow: wrap;
+    margin-top: 1em;
   }
 `
 
@@ -54,8 +75,27 @@ export const Anchor = styled(Link)`
   transition: .3s;
   display: flex;
   align-items: center;
+  ${({activo}) => activo && css`
+    
+    color: #00caf5;
+    & .heroElec {
+      & .prefix__cls-2, & .rect{stroke:#00caf5 !important}
+      & .prefix__cls-3{fill:#00caf5 !important}
+    }
+    & .heroWeb{
+      & .prefix__cls-{stroke:#00caf5 !important}
+    }
+    & .heroMovil{
+      & .prefix__cls-1, & .prefix__cls-2{stroke:#00caf5 !important}
+    }
+  `}
+  &:focus{
+  }
   @media(${mobile}){
     flex-direction: column;
+    &:nth-of-type(1){
+      justify-content: center;
+    }
   }
 `
 export const Icono = styled.span`
@@ -70,8 +110,14 @@ export const ListItem = styled.li`
   margin-bottom: 2em;
   
   background: ${colorPrincipal};
+  &:nth-of-type(1){
+    & ${Anchor}{
+      font-size: 1.5rem;
+      
+    }
+  }
   @media(${mobile}){
-    width: 25%;
+    width: 33%;
   }
   ${props => props.activo && css`
     @media(${mobile}){

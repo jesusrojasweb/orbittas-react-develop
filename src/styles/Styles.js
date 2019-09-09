@@ -9,6 +9,9 @@ export const Margen = ()=> css`
   max-width: 1420px;
   width: 100%;
   @media(${mobile}){
-    padding: 8em 3em 6em 2em;
+    padding: 2em 3em 6em 2em;
+  }
+  @media(min-width: 1420px){
+    margin: 0 auto;
   }
 `

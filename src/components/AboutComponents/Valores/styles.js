@@ -49,5 +49,4 @@ export const Valor = styled.h3`
 export const Descripcion = styled.p`
   margin-bottom: 0;
   grid-area: 2 / 1 / 3 / 2;
-  color: ${colorSecundario};
 `

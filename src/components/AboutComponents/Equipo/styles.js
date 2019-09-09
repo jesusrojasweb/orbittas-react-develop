@@ -58,17 +58,34 @@ export const Item = styled.div`
 export const Anchor = styled.a`
   color: white;
 `
+
+export const Hover = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0; 
+  transition: .5s;
+`
 export const Head = styled.div`
   position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  &:hover{
+    & ${Hover}{
+      opacity: 1;
+    }
+  }
 `
-export const Hover = styled.div`
-
+export const Red = styled.div`
   position: absolute;
   bottom: 15%;
   left: 25%;
   color: white;
   font-size: 1.5rem;
   text-decoration: none;
+  z-index: 1000;
 `
 export const Body = styled.div`
   color: white;

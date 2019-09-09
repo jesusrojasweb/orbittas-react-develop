@@ -4,8 +4,10 @@ import PropTypes from 'prop-types'
 import {Hover, DetalleClose, Detalle, Contenedor, Nombre, Skills,Item, Imagen, Subtitle, Gustar, Boton, Btn} from './styles'
 import {FaTimes} from 'react-icons/fa'
 
-export const ProyectoDetails = ({descripcionShort, mostrar,handleMostrar, experiencia,servicio, brief, descripcionLong, primeraImagen,segundaImagen, nombre}) =>{
+export const ProyectoDetails = ({_id,descripcionShort, mostrar,handleMostrar, caracteristicas = [],servicio, brief, descripcionLong, primeraImagen,segundaImagen, nombre}) =>{
+  console.log(descripcionShort)
   
+
   return(
     <Fragment>
       <Hover active={mostrar}>
@@ -13,14 +15,16 @@ export const ProyectoDetails = ({descripcionShort, mostrar,handleMostrar, experi
           <DetalleClose onClick={()=> handleMostrar(false)}><FaTimes/></DetalleClose>
         </Contenedor>
       </Hover>
-      <Detalle active={mostrar}>
+      <Detalle active={mostrar} id={_id}>
         <Contenedor>
           <Nombre>{nombre}</Nombre>
           <p>{descripcionShort}</p>
           <Skills>
             <div>
               <Item>Experiencia</Item>
-              <p>{experiencia}</p>
+              <p>{
+                caracteristicas.map(({value})=> value += '/')
+              }</p>
             </div>
             <div>
               <Item>Servicios</Item>
@@ -48,15 +52,15 @@ export const ProyectoDetails = ({descripcionShort, mostrar,handleMostrar, experi
   )
 }
 
-ProyectoDetails.propTypes = {
-  descripcionShort: PropTypes.string.isRequired,
-  mostrar: PropTypes.boolean,
-  handleMostrar: PropTypes.func.isRequired,
-  experiencia: PropTypes.string.isRequired,
-  servicio: PropTypes.string.isRequired,
-  brief: PropTypes.string.isRequired,
-  descripcionLong:  PropTypes.string.isRequired,
-  primeraImagen: PropTypes.string.isRequired,
-  segundaImagen:  PropTypes.string.isRequired,
-  nombre: PropTypes.string.isRequired
-}
+// ProyectoDetails.propTypes = {
+//   descripcionShort: PropTypes.string.isRequired,
+//   mostrar: PropTypes.boolean,
+//   handleMostrar: PropTypes.func.isRequired,
+//   experiencia: PropTypes.string.isRequired,
+//   servicio: PropTypes.string.isRequired,
+//   brief: PropTypes.string.isRequired,
+//   descripcionLong:  PropTypes.string.isRequired,
+//   primeraImagen: PropTypes.string.isRequired,
+//   segundaImagen:  PropTypes.string.isRequired,
+//   nombre: PropTypes.string.isRequired
+// }

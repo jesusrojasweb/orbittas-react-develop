@@ -1,15 +1,16 @@
 import styled from 'styled-components'
-import {colorPrincipal, btn, colorFluerecente,tablet,mobile,desktop} from "../../../styles/variables";
+import {colorPrincipal, btn, colorFluerecente,tablet,mobile,fuentePrincipal,desktop} from "../../../styles/variables";
 import {Link} from "@reach/router";
 import {Margen} from "../../../styles/Styles";
 import {rotate} from '../../../styles/animations'
 
 export const About = styled.section`
-  background: ${colorPrincipal};
+  background: none;
   align-items: center;
   width: 100%;
   position: relative;
   overflow-x: visible;
+  position: relative;
   @media(${mobile}){
     height: auto;
   }
@@ -20,14 +21,26 @@ export const Grid = styled.div`
   flex-direction: column;
   color: white;
   justify-content: space-evenly;
-  padding-top:4em;
   ${Margen}
+  padding-top: 5em;
+  padding-bottom: 5em;
   @media(${mobile}){
     height: auto;
+    padding: 3em 3em 0em;
     & .img{
       margin: 0 !important;
       width: 100% !important;
     }
+  }
+`
+
+export const Title = styled.h2`
+  // font-family: ${fuentePrincipal};
+  margin: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  @media(${mobile}){
+    margin-bottom: 1em;
   }
 `
 
@@ -117,7 +130,6 @@ export const CualidadNombre = styled.span`
 `
 export const Btn = styled(Link)`
   ${btn}
-  border: 1px solid white;
   z-index: 900;
   &:hover{
     border-color: ${colorFluerecente};

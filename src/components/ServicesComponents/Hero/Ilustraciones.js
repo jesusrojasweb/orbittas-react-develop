@@ -1,9 +1,12 @@
 import React from 'react'
 
 export const HeroProyecto = props => (
-  <svg viewBox="0 0 112.06 160.12" {...props}>
+  <svg viewBox="0 0 112.06 160.12" {...props} className="heroProyecto">
     <defs>
-      <style>{'.prefix__cls-1{fill:#fff}'}</style>
+      <style>
+        {`.heroProyecto .prefix__cls-1{fill:#fff; transition: .3s;} .heroProyecto:hover .prefix__cls-1{fill:#00caf5}
+        ${()=> props.activo && '.heroProyecto .prefix__cls-1{fill: #00caf5}'}`}
+      </style>
     </defs>
     <g id="prefix__Capa_2" data-name="Capa 2">
       <g id="prefix__About_Us" data-name="About Us">
@@ -101,7 +104,7 @@ export const HeroElec = props => (
     <defs>
       <style>
         {
-          '.heroElec .prefix__cls-2{fill:none;stroke:#fff;stroke-width:2.2px;stroke-linejoin:round}.heroElec .prefix__cls-3{fill:#fff}'
+          '.heroElec .prefix__cls-2{fill:none;stroke:#fff;stroke-width:2.2px;stroke-linejoin:round; transition: .3s;} .heroElec:hover .prefix__cls-2,.heroElec:hover .rect{stroke:#00caf5} .heroElec .prefix__cls-3{fill:#fff; transition: .3s;} .heroElec:hover .prefix__cls-3{fill:#00caf5}'
         }
       </style>
     </defs>
@@ -118,6 +121,7 @@ export const HeroElec = props => (
           fill="none"
           stroke="#fff"
           strokeWidth={2.2}
+          className="rect"
         />
         <path className="prefix__cls-2" d="M57.92 57.68V9.39h55.12" />
         <circle className="prefix__cls-2" cx={119.15} cy={9.39} r={6.83} />
@@ -181,7 +185,10 @@ export const HeroElec = props => (
   </svg>
 )
 export const HeroWeb = props => (
-  <svg viewBox="0 0 140.98 132.69" {...props}>
+  <svg viewBox="0 0 140.98 132.69" {...props} className="heroWeb">
+    <style>
+      {`.heroWeb:hover .prefix__cls-{stroke:#00caf5} .prefix__cls-{transition: .3s;}`}
+    </style>
     <g data-name="Capa 2">
       <path
         d="M7.69 109.61h125.6a6.34 6.34 0 016.34 6.34 15.4 15.4 0 01-15.4 15.4H16.75a15.4 15.4 0 01-15.4-15.4 6.34 6.34 0 016.34-6.34zM121.67 1.35H19.31a18 18 0 00-18 18v80.81h138.32V19.31a18 18 0 00-17.96-17.96zM47.2 41.06a4.35 4.35 0 01-2.34 3.86l-6.74 3.55a2.67 2.67 0 00.05 4.75l6.61 3.3a4.37 4.37 0 11-3.9 7.82L22 54.9a4.37 4.37 0 01-.09-7.78l18.89-9.94A4.37 4.37 0 0147.2 41zm38.92-12.82L62.74 77a4.38 4.38 0 01-3.94 2.48 4.37 4.37 0 01-3.94-6.26l23.38-48.76a4.37 4.37 0 117.88 3.78zm33 26.11l-18.92 9.94a4.37 4.37 0 01-6.4-3.86 4.35 4.35 0 012.34-3.86l6.72-3.57a2.67 2.67 0 000-4.75L96.2 45a4.36 4.36 0 113.9-7.81l18.9 9.38a4.37 4.37 0 01.1 7.78z"
@@ -190,6 +197,7 @@ export const HeroWeb = props => (
         strokeMiterlimit={10}
         strokeWidth={2.69}
         data-name="About Us"
+        className="prefix__cls-"
       />
     </g>
   </svg>
@@ -200,7 +208,7 @@ export const HeroMovil = props => (
     <defs>
       <style>
         {
-          '.heroMovil .prefix__cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.25px}'
+          '.heroMovil .prefix__cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.25px; transition: .3s;}.heroMovil:hover .prefix__cls-1{stroke:#00caf5} .heroMovil:hover .prefix__cls-2{stroke:#00caf5}'
         }
       </style>
     </defs>
@@ -221,6 +229,7 @@ export const HeroMovil = props => (
           fill="none"
           stroke="#fff"
           strokeMiterlimit={10}
+          className="prefix__cls-2"
         />
         <path
           className="prefix__cls-1"

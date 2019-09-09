@@ -4,8 +4,8 @@ export const onScroll = (funcion)=> {
   const [scroll, setScroll] = useState(false)
 
   useEffect(() => {
-    document.addEventListener('scroll', funcion) || document.addEventListener('mousewheel', (e)=> funcion(e))
-    return ()=> document.removeEventListener('scroll',funcion) || document.addEventListener('mousewheel', (e)=> funcion(e))
+    document.addEventListener('scroll', funcion)
+    return ()=> document.removeEventListener('scroll',funcion)
 
   }, [scroll])
   return [scroll, setScroll]

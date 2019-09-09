@@ -31,6 +31,20 @@ const floatingLeftKeyframes = keyframes`
     transform: translateX(-1%);
   }  
 `
+const floatingLeftAngleKeyframes = keyframes`
+  0% {
+    left: 2em;
+  }
+  25% {
+    left: 2.1em;
+  }
+  75%{
+    left: 1.9em;
+  }  
+  100% {
+    left: 2em;
+  }  
+`
 const tossingtKeyframes = keyframes`
   0% {
     transform: rotate(-4deg);  
@@ -102,6 +116,22 @@ const rotateKeyframes = keyframes`
     transform: rotate(360deg);
   }
 `
+const loaderCircleKeyframes = keyframes`
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+
+`
 
 export const floating = ({time = '1.5s'} = {}) => css`
   animation: ${time} ${floatingKeyframes} infinite;
@@ -113,6 +143,9 @@ export const rotateLeft = ({time = '50s', timing = 'linear'} = {}) => css`
 `
 export const floatingLeft = ({time = '1.5s'} = {}) => css`
   animation: ${floatingLeftKeyframes} ${time} infinite;
+`
+export const floatingLeftAngle = ({time = '1.5s'} = {}) => css`
+  animation: ${floatingLeftAngleKeyframes} ${time} linear infinite;
 `
 
 export const tossing = ({time = '2s', timing = 'ease-in-out'} = {}) => css`
@@ -145,4 +178,7 @@ export const escalar = ({time = '2s', timing = 'ease-out'} = {}) => css`
 export const rotate = ({time = '40s', timing = 'linear'} = {}) => css`
   animation: ${rotateKeyframes} ${time} ${timing} infinite;
   transform-origin: 50%;
+`
+export const loaderCircle = () => css`
+  animation: ${loaderCircleKeyframes} 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 `

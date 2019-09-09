@@ -5,20 +5,31 @@ import {ServiciosHome} from "../components/HomeComponents/Servicios";
 import {PortafolioHome} from "../components/HomeComponents/Portafolio";
 import {SEO} from "../components/SEO";
 import {ContactoHome} from "../components/HomeComponents/Contacto";
+import {Contenedor} from './HomeStyles'
+import {ParticulasFondo} from '../components/ParticulasFondo'
 
 const descripcion = 'Somos un equipo apasionado por la tecnología e innovación, conformado por profesionales en diversas áreas.'
 
-export default ()=>{
+export default ({idioma, changed,handleChange})=>{
+  let title
+  if(!idioma){
+    title = 'ORBITTAS - Agencia Digital'
+  }else{
+    title = 'ORBITTAS - Digital Agency'
+  }
   return (
     <SEO 
-      title={`ORBITTAS - Agencia Digital`}
+      title={title}
       descripcion={descripcion}
     >
-      <HeroHome/>
-      <AboutHome/>
-      <ServiciosHome/>
-      <PortafolioHome/>
-      <ContactoHome/>
+      <Contenedor>
+        {/*<ParticulasFondo/>*/}
+        <HeroHome changed={changed} handleChange={handleChange} idioma={idioma}/>
+        <AboutHome idioma={idioma}/>
+        <ServiciosHome idioma={idioma}/>
+        <PortafolioHome idioma={idioma}/>
+        <ContactoHome idioma={idioma}/>
+      </Contenedor>
     </SEO>
   )
 }

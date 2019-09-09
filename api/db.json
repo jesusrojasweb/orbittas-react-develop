@@ -1,126 +1,642 @@
 {
   "proyectos": [
     {
-      "id": 1,
-      "link": "p4b-pasion-por-el-balon",
-      "nombre": "P4b",
-      "caracteristicas": "Html/CSS/Wordpress",
-      "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-p4b.png",
-      "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
-      "slogan": "Pasión por el balón",
-      "details": {
-              "experiencia": "Html / CSS3, Wordpress, Responsive Design",
-              "servicio": "Desarrollo Web",
-              "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
-              "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
-              "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
-              "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
-              
-          }
+        "link": "p4b-pasion-por-el-balon",
+        "servicio":"web",
+        "es":{
 
-
-    },
-    {
-      "id": 2,
-      "link": "tenneco",
-      "nombre": "Tenneco",
-      "caracteristicas": "AndroidStudio",
-      "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-tenneco.png",
-      "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
-      "slogan": "Slogan de tenneco",
-      "details": {
-              "experiencia": "Android Studio, Java",
-              "servicio": "Desarrollo movil",
-              "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
-              "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
-              "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
-              "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
-              
-          }
-      
-    },
-    {
-      "id": 3,
-      "link": "sistema-de-riego",
-      "nombre": "Sistema de Riego",
-      "caracteristicas": "Angular / HTML / CSS",
-      "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
-      "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
-      "slogan": "Slogan de CITYVISION",
-      "details": 
-          {
-
+          "id": 1,
+          "link": "p4b-pasion-por-el-balon",
+          "nombre": "P4b",
+          "caracteristicas": "Html / CSS3, JavaScript, Responsive Design",
+          "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-p4b.png",
+          "descripcionShort": "La red social está destinada a conectar personas en el mundo deportivo, creando enlaces mediante el uso del  buscador avanzado y con base a las características de interés de cada miembro",
+          "slogan": "Pasión por el balón",
+          "details": {
               "experiencia": "Html / CSS3, JavaScript, Responsive Design",
               "servicio": "Desarrollo Web",
-              "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
-              "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+              "brief": "La WEB cuenta con sección de búsqueda avanzada, interacción de usuarios, newsletter, blog de noticias, mensajes privados, y todas las herramientas que complementan una red social. \n Los usuarios administradores tienen acceso a: visualización completa del sitio, publicar información importante, vigilar su funcionamiento y conocer las estadísticas de uso. \n Desde su lanzamiento numerosos miembros se han registrado, entre ellos conocidos de los medios deportivos Colombianos.",
+              "descripcionLong": "La red social está destinada a conectar personas en el mundo deportivo, creando enlaces mediante el uso del  buscador avanzado y con base a las características de interés de cada miembro.",
               "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
               "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+              
           }
+        },
+        "link": "p4b-pasion-por-el-balon",
+        "en": {
+            "id": 1,
+            "link": "p4b-pasion-por-el-balon",
+            "nombre": "P4b",
+            "caracteristicas": "Html / CSS3, JavaScript, Responsive Design",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-p4b.png",
+            "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+            "slogan": "Pasión por el balón",
+            "details": {
+                "experiencia": "Html / CSS3, Wordpress, Responsive Design",
+                "servicio": "Desarrollo Web",
+                "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+                "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+                "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                
+            }
+        }
+
+
+    },
+    {
+        "link": "tenneco-app",
+        "servicio": "movil",
+        "es":{
+            "id": 2,
+            "nombre": "Tenneco App",
+            "caracteristicas": "Android / CSS3, JavaScript, MySQ",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-tenneco.png",
+            "descripcionShort": "APP Android y sitio web que permite llevar el control de producción de las líneas de planta de Tenneco, conociendo la efectividad de los empleados en cada línea.",
+            "details": {
+                    "servicio": "Desarrollo movil",
+                    "brief": "Mediante esta aplicación los líderes de las líneas de producción pueden mantener un control sobre la empresa y sobre los operadores de línea, verificando su productividad, tiempo de respuesta ante las fallas, horas laboradas y programación de turnos. \n Mediante la versión WEB, se grafican las estadísticas de producción y se visualiza fácilmente los cambios en una línea de tiempo para facilitar la toma de decisiones por los gerentes. ",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                    
+                }
+        },
+        "en":{
+            "id": 2,
+            "link": "tenneco",
+            "nombre": "Tenneco",
+            "caracteristicas": "AndroidStudio",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-tenneco.png",
+            "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+            "slogan": "Slogan de tenneco",
+            "details": {
+                    "experiencia": "Android Studio, Java",
+                    "servicio": "Desarrollo movil",
+                    "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+                    "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                    
+                }
+        }
+      
       
     },
     {
-      "id": 4,
-      "link": "p4b-pasion-por-el-balon",
-      "nombre": "P4b",
-      "caracteristicas": "Html/CSS/Wordpress",
-      "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-p4b.png",
-      "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
-      "slogan": "Pasión por el balón",
-      "details": {
+        "link": "sistema-de-riego",
+        "servicio": "electronica",
+        "es":{
+            "id": 3,
+            "link": "sistema-de-riego",
+            "nombre": "Sistema de Riego",
+            "caracteristicas": "Ethernet / WIFI / UDP / TCP/IP / IOT",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Sistema de monitoreo y control de riego que permite al usuario a través de una aplicación WEB conocer el estado de sus cultivos, dando acceso a tomar acciones a distancia para mantener los valores necesarios. ",
+            "slogan": "Slogan de CITYVISION",
+            "details": 
+                {
+
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Desarrollo Electrónico",
+                    "brief": "A través del sistema WEB se asigna a cada válvula una zona de riego, la cual será programada para su encendido y apagado, indicando: hora y duración por zona. Cada Válvula también puede encenderse de manera independiente según sea la necesidad. Las variables sensadas, se grafican y se muestran en un histórico que permite el análisis de datos, entre los valores sensados se sugiere: humedad, temperatura, densidad del aire, dirección del viento, (la versatilidad del sistema permite adicionar cualquier otro para mayor detalle).",
+                    "descripcionLong": "El sistema de monitoreo y control de riego permite al usuario a través de una aplicación WEB conocer el estado de sus cultivos, dando acceso a tomar acciones a distancia para mantener los valores necesarios. ",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }    
+        },
+        "en":{
+            "id": 3,
+            "link": "sistema-de-riego",
+            "nombre": "Sistema de Riego",
+            "caracteristicas": "Ethernet / WIFI / UDP / TCP/IP / IOT",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+            "slogan": "Slogan de CITYVISION",
+            "details": 
+                {
+
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Desarrollo Web",
+                    "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+                    "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }      
+        }
+      
+      
+    },
+    {
+        "link": "smart-shower",
+        "servicio": "electronica",
+        "es":{
+
+          "id": 4,
+          "nombre": "Smart Shower",
+          "caracteristicas": "WIFI / TCP/IP / IOT/ Control",
+          "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-p4b.png",
+          "descripcionShort": "Permite controlar el consumo de agua de un establecimiento, se activa al detectar consumo de agua, siendo una solución adecuada en ahorro energético.",
+          "details": {
               "experiencia": "Html / CSS3, Wordpress, Responsive Design",
               "servicio": "Desarrollo Web",
-              "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
-              "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+              "brief": "Mediante un sistema WEB son introducidos los valores máximos de consumo permitidos, un sensor de flujo detecta el consumo y mide la cantidad del mismo, los datos se envían al servidor generando reportes, y permitiendo el control automático o manual para disminuir el caudal o cerrarlo completamente según la necesidad.",
+              "descripcionLong": "Sistema de monitoreo para consumo de agua, el sistema permite monitorear en una WEB las estadísticas de consumo, generando un control de cierre de válvula en caso de exceder los límites establecidos.",
               "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
               "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
               
           }
-      
+        },
+        "en": {
+            "id": 4,
+            "link": "monitor-de-tablero-electrico",
+            "nombre": "P4b",
+            "caracteristicas": "WIFI / TCP/IP / IOT/ Control",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-p4b.png",
+            "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+            "slogan": "Pasión por el balón",
+            "details": {
+                "experiencia": "Html / CSS3, Wordpress, Responsive Design",
+                "servicio": "Desarrollo Web",
+                "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+                "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+                "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                
+            }
+        }
 
 
     },
     {
-      "id": 5,
-      "link": "tenneco",
-      "nombre": "Tenneco",
-      "caracteristicas": "AndroidStudio",
-      "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-tenneco.png",
-      "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
-      "slogan": "Slogan de tenneco",
-      "details": {
-              "experiencia": "Android Studio, Java",
-              "servicio": "Desarrollo movil",
-              "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
-              "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
-              "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
-              "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
-              
-          }
+        "link": "monitor-de-tablero-eléctrico",
+        "servicio": "electrica",
+        "es":{
+            "id": 5,
+            "nombre": "MTE",
+            "caracteristicas": "Ethernet / TCP/IP / IOT/ Mysql",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-tenneco.png",
+            "descripcionShort": "Sistema basado en Raspberry PI, permite registrar las medidas de voltaje y corrientes en un tablero eléctrico de alta potencia, generando reportes en un servidor WEB.",
+            "slogan": "Slogan de tenneco",
+            "details": {
+                    "experiencia": "Android Studio, Java",
+                    "servicio": "Desarrollo Electrónico",
+                    "brief": "Al conectar los sensores no invasivos en un tablero eléctrico, se utilizan los conversores adecuados para adaptar las lecturas, y luego ser enviadas a través de la red a un servidor, permitiendo al cliente conocer las estadísticas de consumo, así como el estado del tablero. Ideal para mantenimiento preventivo, y para conocer los cambios no esperados de consumo en las redes eléctricas.",
+                    "descripcionLong": "El sistema permite el sensado de altos valores de tensión corriente y temperatura y adaptarlos para ser mostrados en un servidor WEB, generando reportes en Excel",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                    
+                }
+        },
+        "en":{
+            "id": 5,
+            "link": "tenneco",
+            "nombre": "Tenneco",
+            "caracteristicas": "Ethernet / TCP/IP / IOT/ Mysql",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/mockup-tenneco.png",
+            "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+            "slogan": "Slogan de tenneco",
+            "details": {
+                    "experiencia": "Android Studio, Java",
+                    "servicio": "Desarrollo Electrónico",
+                    "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+                    "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                    
+                }
+        }
+      
       
     },
     {
-      "id": 6,
-      "link": "sistema-de-riego",
-      "nombre": "Sistema de Riego",
-      "caracteristicas": "Angular / HTML / CSS",
-      "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
-      "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
-      "slogan": "Slogan de CITYVISION",
-      "details": 
-          {
+        "link": "sensor-innalámbrico-xbee",
+        "servicio": "electronica",
+        "es":{
+            "id": 6,
+            "nombre": "Sensor inalámbrico",
+            "caracteristicas": "Xbee / TCP/IP / IOT/ Mysql",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Sistema que permite el sensado inalámbrico y el envío de datos a un servidor para su monitorización.",
+            "slogan": "Slogan de senso",
+            "details": 
+                {
 
-              "experiencia": "Html / CSS3, JavaScript, Responsive Design",
-              "servicio": "Desarrollo Web",
-              "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
-              "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
-              "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
-              "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
-          }
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Desarrollo Electrónico",
+                    "brief": "Sistema que permite el sensado inalámbrico y el envío de datos a un servidor para su monitorización.",
+                    "descripcionLong": "Mediante el uso de tecnología Xbee, los valores sensados son transmitidos de manera inalámbrica al receptor que luego los mostrará en un servidor WEB.",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }    
+        },
+        "en":{
+            "id": 6,
+            "link": "sistema-de-riego",
+            "nombre": "Sistema de Riego",
+            "caracteristicas": "Angular / HTML / CSS",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+            "slogan": "Slogan de CITYVISION",
+            "details": 
+                {
+
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Desarrollo Electrónico",
+                    "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+                    "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }      
+        }
+      
+      
+    },
+    {
+        "link": "transmisor-multiproposito",
+        "servicio": "electronica",
+        "es":{
+            "id": 7,
+            "nombre": "Transmisor multiproposito",
+            "caracteristicas": "IOT/ MQTT-MQTTS / GSM/ LORA/ NODE-RED / MySQL / AWS / mosquitto / ESPWROOM32U",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Dispositivo que permite el intercambio de información entre una aplicación o red de sensores y un servidor con base de datos en la web. Compatible con alimentación SOLAR.",
+            "details": 
+                {
+
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Monitoreo y control Remoto, BIG DATA, Desarrollo Electrónico ",
+                    "brief": "Capacidad de conectarse a la Red mediante WIFI en su versión base, o a través de Modem GSM/GPRS, así mismo en condiciones donde no se tenga acceso a estas tecnologías puede agregarse un módulo LORA para transmisiones P2P. Este Dispositivo posee la capacidad de transmitir datos mediante MQTT y MQTTS a bróker Cloud MQTT, Broker mosquitto o AWS-IOTCORE, posee una memoria Micro SD que permite el almacenamiento de configuraciones y registro de las variables monitoreadas. Consta de un modo AP para la visualización y descarga de datos local sin conexión con un Router y una Web Server el cual facilita la visualización y descargas mediante conexión con Router y permitiendo también configurar datos de manera remota mediante comandos MQTT.Cuenta con modo de operación continua y modo de operación SLEEP para ahorro de energía en aplicaciones con alimentación SOLAR.",
+                    "descripcionLong": "Dispositivo electrónico innovador basado en el microcontrolador ESPWROOM32U que permite el monitoreo de varias variables al mismo tiempo, entre ellas: distancia, inclinación o posición relativa, temperatura, humedad relativa, altitud, presión, latitud, longitud, fecha, hora, calidad del aire.",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }    
+        },
+        "en":{
+            "id": 6,
+            "link": "sistema-de-riego",
+            "nombre": "Sistema de Riego",
+            "caracteristicas": "Angular / HTML / CSS",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+            "slogan": "Slogan de CITYVISION",
+            "details": 
+                {
+
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Monitoreo y control Remoto, BIG DATA, Desarrollo Electrónico ",
+                    "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+                    "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }      
+        }
+      
+      
+    },
+    {
+        "link": "transmisor-multiproposito-estacion-meteorologica",
+        "servicio": "electronica",
+        "es":{
+            "id": 8,
+            "nombre": "TMP-EM",
+            "caracteristicas": "WIFI / MQTTS / IOT / LORA / GSM",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Sistema de monitoreo de variables meteorológicas para estudios ambientales.",
+            "details": 
+                {
+
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Monitoreo y control Remoto, BIG DATA, Desarrollo Electrónico ",
+                    "brief": "Capacidad de conectarse a la Red mediante WIFI en su versión base, o a través de Modem GSM/GPRS, así mismo en condiciones donde no se tenga acceso a estas tecnologías puede agregarse un módulo LORA para transmisiones P2P. Este Dispositivo posee la capacidad de transmitir datos mediante MQTT y MQTTS a bróker Cloud MQTT, Broker mosquitto o AWS-IOTCORE, posee una memoria Micro SD que permite el almacenamiento de configuraciones y registro de las variables monitoreadas. Consta de un modo AP para la visualización y descarga de datos local sin conexión con un Router y una Web Server el cual facilita la visualización y descargas mediante conexión con Router y permitiendo también configurar datos de manera remota mediante comandos MQTT.Cuenta con modo de operación continua y modo de operación SLEEP para ahorro de energía en aplicaciones con alimentación SOLAR.",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "descripcionLong": "El sistema de monitoreo y control meteorológico permite al usuario a través de una aplicación WEB realizar predicciones meteorológicas y estudios climáticos necesarios en la Agroindustria, Servicios, y deportes.",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }    
+        },
+        "en":{
+            "id": 6,
+            "link": "sistema-de-riego",
+            "nombre": "Sistema de Riego",
+            "caracteristicas": "Angular / HTML / CSS",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+            "slogan": "Slogan de CITYVISION",
+            "details": 
+                {
+
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Monitoreo y control Remoto, BIG DATA, Desarrollo Electrónico ",
+                    "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+                    "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }      
+        }
+      
+      
+    },
+    {
+        "link": "transmisor-multiproposito-agroindustrial-(condiciones-de-suelo)",
+        "servicio": "electronica",
+        "es":{
+            "id": 9,
+            "nombre": "TMP-AI",
+            "caracteristicas": "IOT/ MQTT-MQTTS / GSM/ LORA/ NODE-RED / MySQL / AWS / mosquitto / ESPWROOM32U",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Sistema de monitoreo de condiciones de suelo para un uso inteligente de los recursos hídricos.",
+            "details": 
+                {
+
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Monitoreo y control Remoto, BIG DATA, Desarrollo Electrónico ",
+                    "brief": "El sistema basado en tecnología TMP registra valores de temperatura, humedad y conductividad eléctrica del suelo, además puede ser integrado a sistemas meteorológicos para un estudio más completo y preciso de las condiciones necesarias para el proceso productivo.",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "descripcionLong": "Sistema de monitoreo y control que  permite al usuario a través de una aplicación WEB realizar estudios de las condiciones del suelo para ejercer control sobre el riego, establecer planes de fertilización, cosecha y siembra de cultivos",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }    
+        },
+        "en":{
+            "id": 6,
+            "link": "sistema-de-riego",
+            "nombre": "Sistema de Riego",
+            "caracteristicas": "Angular / HTML / CSS",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+            "slogan": "Slogan de CITYVISION",
+            "details": 
+                {
+
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Monitoreo y control Remoto, BIG DATA, Desarrollo Electrónico ",
+                    "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+                    "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }      
+        }
+      
+      
+    },
+    {
+        "link": "transmisor-multiproposito-integridad-estructural",
+        "servicio": "electronica",
+        "es":{
+            "id": 10,
+            "nombre": "TMP-IE",
+            "caracteristicas": "WIFI / MQTTS / IOT / LORA /GSM",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Sistema de monitoreo y control que permite al usuario a través de una aplicación WEB realizar estudios de integridad estructural de manera remota, puede generar alertas de deterioro",
+            "details": 
+                {
+
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Monitoreo y control Remoto, BIG DATA, Desarrollo Electrónico ",
+                    "brief": "Utilizando sensores de vibraciones, distancia e inclinación se registra la integridad de una infraestructura para mantenimiento preventivo y alertas de siniestros. ",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "descripcionLong": "Sistema de monitoreo y control que  permite al usuario a través de una aplicación WEB realizar estudios de las condiciones del suelo para ejercer control sobre el riego, establecer planes de fertilización, cosecha y siembra de cultivos",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }    
+        },
+        "en":{
+            "id": 6,
+            "link": "sistema-de-riego",
+            "nombre": "Sistema de Riego",
+            "caracteristicas": "WIFI / MQTTS / IOT / LORA /GSM",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+            "slogan": "Slogan de CITYVISION",
+            "details": 
+                {
+
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Monitoreo y control Remoto, BIG DATA, Desarrollo Electrónico ",
+                    "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+                    "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }      
+        }
+      
+      
+    },
+    {
+        "link": "itedu",
+        "servicio": "web",
+        "es":{
+            "id": 11,
+            "nombre": "ITEDU",
+            "caracteristicas": "Wordpress / CSS3, JavaScript, Responsive Design.",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Sistema de monitoreo de condiciones de suelo para un uso inteligente de los recursos hídricos.",
+            "details": 
+                {
+
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Desarrollo Web ",
+                    "brief": "El sistema basado en tecnología TMP registra valores de temperatura, humedad y conductividad eléctrica del suelo, además puede ser integrado a sistemas meteorológicos para un estudio más completo y preciso de las condiciones necesarias para el proceso productivo.",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "descripcionLong": "Sistema de monitoreo y control que  permite al usuario a través de una aplicación WEB realizar estudios de las condiciones del suelo para ejercer control sobre el riego, establecer planes de fertilización, cosecha y siembra de cultivos",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }    
+        },
+        "en":{
+            "id": 6,
+            "link": "sistema-de-riego",
+            "nombre": "Sistema de Riego",
+            "caracteristicas": "Angular / HTML / CSS",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+            "slogan": "Slogan de CITYVISION",
+            "details": 
+                {
+
+                    "experiencia": "Html / CSS3, JavaScript, Responsive Design",
+                    "servicio": "Desarrollo Web ",
+                    "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+                    "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }      
+        }
+      
+      
+    },
+    {
+        "link": "herbalife-store",
+        "servicio": "web",
+        "es":{
+            "id": 13,
+            "nombre": "Herbalife store",
+            "caracteristicas": "Wordpress / CSS3, JavaScript, Responsive Design.",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Tienda en línea para productos Herbalife, funciona con plataforma de pago en el país chileno. ",
+            "details": 
+                {
+
+                    "experiencia": "Wordpress / CSS3, JavaScript, Responsive Design.",
+                    "servicio": "Desarrollo Web ",
+                    "brief": "La WEB cuenta con un blog, portafolio de productos, pago en línea, calificación y pasarelas de pago con la normativa propia del país. ",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "descripcionLong": "Plataforma que permite al administrador subir productos nuevos y gestionar sus ventas a través de la sección de administración, generando facturas y gestionando los envíos pendientes de cada producto adquirido.  ",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }    
+        },
+        "en":{
+            "id": 6,
+            "link": "sistema-de-riego",
+            "nombre": "Sistema de Riego",
+            "caracteristicas": "Wordpress / CSS3, JavaScript, Responsive Design",
+            "src": "https://jesusrojasweb.github.io/orbittas/img/logo-citivision.png",
+            "descripcionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quod, at doloremque unde ipsam, nam enim, fuga hic nulla odit fugit iste omnis eius magni ea quae culpa ratione veritatis?",
+            "slogan": "Slogan de CITYVISION",
+            "details": 
+                {
+
+                    "experiencia": "Wordpress / CSS3, JavaScript, Responsive Design.",
+                    "servicio": "Desarrollo Web ",
+                    "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, eaque iste, sapiente tempora molestias soluta ad, maxime illum numquam suscipit error ab. Neque tempora, quibusdam! Perferendis rem fuga quis.",
+                    "descripcionLong": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet, voluptates nobis. Dolore laborum et soluta porro commodi aut, placeat ratione, aliquid, dolor iste optio sunt non sequi aperiam quos!",
+                    "primeraImagen": "https://jesusrojasweb.github.io/orbittas/img/mockup-descripcion-p4b.png",
+                    "segundaImagen": "https://jesusrojasweb.github.io/orbittas/img/overview-p4b.PNG"
+                }      
+        }
+      
       
     }
+    
   ],
   "servicios": [
-    
-  ]
+  {
+    "right": true,
+    "id": "proyecto",
+    "img": "https://jesusrojasweb.github.io/orbittas/img/proyecto.png",
+    "imagenServicio": "https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fproyectos-servicios.png?alt=media&token=c3d52443-fc61-4976-907a-d3348a547bae",
+    "nombre": "Gestión de Proyectos",
+    "servicios": [
+      {
+          "id": 1,
+          "nombre": "KPIS"
+        },
+        {
+          "id": 2,
+          "nombre": "PMI"
+        },
+        {
+          "id": 3,
+          "nombre": "PMP"
+        },
+        {
+          "id": 4,
+          "nombre": "Agile Methogoly"
+        },
+        {
+          "id": 5,
+          "nombre": "Modelamiento y optmización de procesos"
+        },
+        {
+          "id": 6,
+          "nombre": "Desarrollo de herramientas genrenciales"
+        }
+    ]
+  },
+  {
+    "right": false,
+    "id": "electronica",
+    "img": "https://jesusrojasweb.github.io/orbittas/img/electronica.png",
+    "imagenServicio": "https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Felectronica-servicios.png?alt=media&token=24d87c68-5c87-4344-97d5-b86c0268560d",
+    "nombre": "Dispositivos Electrónicos",
+    "servicios": [
+      {
+         "id": 1,
+         "nombre": "Iot"
+       },
+       {
+         "id": 2,
+         "nombre": "domotica"
+       },
+       {
+         "id": 3,
+         "nombre": "Electronica Industrial"
+       },
+       {
+         "id": 4,
+         "nombre": "Dispositivos Inteligentes"
+       },
+       {
+         "id": 5,
+         "nombre": "Construcción de Tableros"
+       },
+       {
+         "id": 6,
+         "nombre": "Otro Item"
+       }
+    ]
+  },
+  {
+    "right": true,
+    "id": "web",
+    "img": "https://jesusrojasweb.github.io/orbittas/img/web.png",
+    "imagenServicio": "https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fweb-servicios.png?alt=media&token=c69e5d0b-34bf-429d-a80f-ae6877a43fa4",
+    "nombre": "Aplicaciones Web",
+    "servicios": [
+      {
+         "id": 1,
+         "nombre": "Iot"
+       },
+       {
+         "id": 2,
+         "nombre": "domotica"
+       },
+       {
+         "id": 3,
+         "nombre": "Electronica Industrial"
+       },
+       {
+         "id": 4,
+         "nombre": "Dispositivos Inteligentes"
+       },
+       {
+         "id": 5,
+         "nombre": "Construcción de Tableros"
+       },
+       {
+         "id": 6,
+         "nombre": "Otro Item"
+       }
+    ]
+  },
+  {
+    "right": false,
+    "id": "movil",
+    "img": "https://jesusrojasweb.github.io/orbittas/img/movil.png",
+    "imagenServicio": "https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fmovil-servicios.png?alt=media&token=2f91099a-5727-4ad0-8071-2d48b9df7a43",
+    "nombre": "Aplicaciones Móviles",
+    "servicios": [
+     {
+       "id": 1,
+       "nombre": "Iot"
+     },
+     {
+       "id": 2,
+       "nombre": "domotica"
+     },
+     {
+       "id": 3,
+       "nombre": "Electronica Industrial"
+     },
+     {
+       "id": 4,
+       "nombre": "Dispositivos Inteligentes"
+     },
+     {
+       "id": 5,
+       "nombre": "Construcción de Tableros"
+     },
+     {
+       "id": 6,
+       "nombre": "Otro Item"
+     }
+    ]
+  }
+]
 }

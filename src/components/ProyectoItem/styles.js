@@ -26,19 +26,22 @@ export const Proyecto = styled(Link)`
   }
 `
 export const Nombre = styled.h2`
-  z-index: 1000;
+  z-index: 500;
   margin: 0;
   color: white;
+  text-transform: uppercase;
+  font-size: 1.3rem;
   @media(${mobile}){
     font-size: 1rem;
   }
 `
 export const Imagen = styled.span`
-  z-index: 1000;
+  z-index: 500;
 `
 export const Caracteristicas = styled.span`
-  z-index: 1000;
+  z-index: 500;
   color: white;
+  text-transform: uppercase;
   @media(${mobile}){
     font-size: .65rem;
   }
