@@ -6,6 +6,7 @@ import {GlobalStyle} from './styles/GlobalStyles'
 import {FontAwesome} from './styles/fontawesome'
 import {Fuentes} from './styles/fuentes'
 import {Menu} from './components/Menu'
+import {Footer} from './components/Footer'
 import {Loading} from './components/Loading'
 // import {Home} from './pages/Home'
 // import {Services} from './pages/Services'
@@ -60,6 +61,7 @@ export const App = ()=> {
           <Contact lang={lang} path={`/contact`} />
           <Proyect lang={idioma} path={`/portfolio/:link`} handleRuta={setRuta}  />
         </Router>
+        <Footer/>
       </Suspense>
     </TranslatorProvider>
   )

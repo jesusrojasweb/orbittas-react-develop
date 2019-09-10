@@ -60,9 +60,6 @@ export const ContactoHome = ()=> {
             </Info>
           </Informacion>
         </GridItem>
-        <GridItem>
-          <Sociales/>
-        </GridItem>
         <Footer>
           <Copy>&copy; Copyright {r('copy')}</Copy>
         </Footer>
