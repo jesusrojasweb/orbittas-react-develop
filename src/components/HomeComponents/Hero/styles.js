@@ -143,6 +143,13 @@ export const Container = styled.div`
   z-index: 500;
   margin-top: 2em;
 `
+
+export const Img = styled.img`
+  position: absolute;
+  right: 6em;
+  bottom: 6em;
+`
+
 export const Btn = styled(Link)`
    ${btn}
    ${gradient()}

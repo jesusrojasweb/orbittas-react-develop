@@ -1,9 +1,26 @@
 import styled, {css} from 'styled-components'
 import {tablet, mobile  } from "../../styles/variables";
+import {loaderCircle} from '../../styles/animations'
+
+export const LoaderCircle = styled.div`
+  display: inline-block;
+  transform: translateZ(1px);
+`
+export const LoaderCircleItem = styled.div`
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 6px;
+  border-radius: 50%;
+  background: #fff;
+  ${loaderCircle()}
+`
+
 
 export const Proyectos = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  width: 100%;
   margin: 2em 3em 2em 0;
   grid-gap: 2em;
   @media(${tablet}){
@@ -36,3 +53,4 @@ export const Proyectos = styled.div`
     }
   `}
 `
+
