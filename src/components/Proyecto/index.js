@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, Fragment} from 'react'
 import PropTypes from 'prop-types'
 
 import {ProyectoDetails} from "../ProyectoDetails"
@@ -6,6 +6,7 @@ import {Body,ProyectoContainer, Grid, Volver, Item, Caption, Nombre, Descripcion
 import {FaAngleLeft} from "react-icons/fa";
 import {ScrollIcon} from './Ilustraciones'
 import {smoothScroll} from '../../hooks/smoothScroll'
+import {Loader} from '../Loader'
 
 
 export const Proyecto = (proyecto)=>{
@@ -57,21 +58,28 @@ export const Proyecto = (proyecto)=>{
   return(
     <ProyectoContainer>
       <Body/>
-      <Grid>
-        <Volver to="/portfolio"><FaAngleLeft/></Volver>
-        <Imagen>
-          <img src={src} alt="p4b"/>
-        </Imagen>
-        <Item>
-          {slogan
-            ? <Caption>{slogan}</Caption>
-            : <br/>
-          }
-          
-          <Nombre>{nombre}</Nombre>
-          <Descripcion>{descripcionShort}</Descripcion>
-          <Boton onClick={()=> showDetail()} href="#"><Texto>Scroll para la información del proyecto</Texto> <Icono><ScrollIcon/> </Icono></Boton>
-        </Item>
+      <Grid grid={nombre === undefined}>
+        {
+          nombre === undefined
+          ? <Loader/>
+          : <Fragment>
+              <Volver to="/portfolio"><FaAngleLeft/></Volver>
+              <Imagen>
+                <img src={src} alt="p4b"/>
+              </Imagen>
+              <Item>
+                {slogan
+                  ? <Caption>{slogan}</Caption>
+                  : <br/>
+                }
+                
+                <Nombre>{nombre}</Nombre>
+                <Descripcion>{descripcionShort}</Descripcion>
+                <Boton onClick={()=> showDetail()} href="#"><Texto>Scroll para la información del proyecto</Texto> <Icono><ScrollIcon/> </Icono></Boton>
+              </Item>
+            
+          </Fragment>
+        }
       </Grid>
       <ProyectoDetails id="details" mostrar={show} handleMostrar={setShow} {...proyecto}/>
     </ProyectoContainer>

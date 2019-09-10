@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {colorPrincipal, btn, colorFluerecente,tablet,mobile,fuentePrincipal,desktop} from "../../../styles/variables";
+import {colorPrincipal, btn, colorFluerecente,tablet,mobile,fuentePrincipal,desktop,tituloSecundario} from "../../../styles/variables";
 import {Link} from "@reach/router";
 import {Margen} from "../../../styles/Styles";
 import {rotate} from '../../../styles/animations'
@@ -35,9 +35,9 @@ export const Grid = styled.div`
 `
 
 export const Title = styled.h2`
-  // font-family: ${fuentePrincipal};
   margin: 0;
-  font-size: 1.5rem;
+  font-family: ${tituloSecundario};
+  font-size: 1.17rem;
   text-transform: uppercase;
   @media(${mobile}){
     margin-bottom: 1em;

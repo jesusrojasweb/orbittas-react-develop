@@ -1,4 +1,4 @@
-import styled,{createGlobalStyle} from 'styled-components'
+import styled,{createGlobalStyle, css} from 'styled-components'
 import {Link} from '@reach/router'
 import {Margen} from "../../styles/Styles";
 import {colorPrincipal, tablet, mobile, fuentePrincipal, fuenteSecundaria, min} from "../../styles/variables";
@@ -29,6 +29,9 @@ export const Grid = styled.div`
   grid-gap: 5em;
   position: relative;
   background: ${colorPrincipal};
+  ${({grid})=> grid && css`
+    grid-template-columns: 1fr;
+  `}
   @media(${tablet}){
     grid-template-columns: 1fr;
     width: 100%;

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import {Margen} from "../../../styles/Styles";
 import {Link} from "@reach/router";
-import {colorPrincipal, fuenteSecundaria, mobile, tablet, desktop, fuentePrincipal} from "../../../styles/variables";
+import {colorPrincipal, fuenteSecundaria, mobile, tablet, desktop, fuentePrincipal,tituloSecundario} from "../../../styles/variables";
 
 export const Servicios = styled.section`
   align-items: center;
@@ -56,10 +56,13 @@ export const Grid = styled.div`
 `
 
 export const Title = styled.h2`
+	font-family: ${tituloSecundario};
+  font-size: 1.17rem;
+  margin-bottom: 2em;
+  font-weight: 600;
   justify-self: start;
   align-self: end;
   color: ${colorPrincipal};
-  font-size: 1.5rem;
   text-transform: uppercase;
   @media(${desktop}){
     grid-column-start: 4 span;

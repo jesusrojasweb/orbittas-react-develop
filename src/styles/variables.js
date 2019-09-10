@@ -5,6 +5,7 @@ export const colorSecundario = '#009270';
 export const colorFluerecente = '#00caf5';
 export const fuentePrincipal = "'Dolce Vita', system-ui";
 export const fuenteSecundaria ="'Arlon', system-ui";
+export const tituloSecundario ="'Comfortaa', system-ui";
 
 export const btn = ()=> css`
   color: white;

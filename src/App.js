@@ -60,6 +60,7 @@ export const App = ()=> {
           <Portfolio lang={lang} path={`/portfolio`} />
           <Contact lang={lang} path={`/contact`} />
           <Proyect lang={idioma} path={`/portfolio/:link`} handleRuta={setRuta}  />
+          <Loading path={`/loading`} />
         </Router>
         <Footer/>
       </Suspense>

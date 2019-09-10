@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {colorPrincipal, btn, colorFluerecente, fuentePrincipal} from "../../../styles/variables";
+import {colorPrincipal, btn, colorFluerecente, fuentePrincipal,tituloSecundario} from "../../../styles/variables";
 import {Margen} from "../../../styles/Styles";
 import {Link} from "@reach/router";
 
@@ -20,7 +20,9 @@ export const Grid = styled.div`
 `
 export const Title = styled.h2`
   color: white;
-  font-size: 1.5rem;
+  font-family: ${tituloSecundario};
+  font-size: 1.17rem;
+  margin-bottom: 2em;
   text-transform: uppercase;
 `
 

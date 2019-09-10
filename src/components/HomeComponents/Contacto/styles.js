@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {Margen} from "../../../styles/Styles";
-import {btn, colorPrincipal, fuentePrincipal, gradient, mobile, tablet, min} from "../../../styles/variables";
+import {btn, colorPrincipal, fuentePrincipal, gradient, mobile, tablet, min,tituloSecundario} from "../../../styles/variables";
 import {Link} from "@reach/router";
 
 export const Contacto = styled.section`
@@ -44,10 +44,12 @@ export const Grid = styled.div`
 
 export const Animanos = styled.h2`
   color: ${colorPrincipal};
-  font-size: 1.5rem;
+  font-family: ${tituloSecundario};
+  font-size: 1.17rem;
+  margin-bottom: 2em;
   text-transform: uppercase;
-  font-size: 2rem;
-  margin-bottom: 1em;
+  // font-size: 2rem;
+  margin-bottom: 3em;
   @media(${mobile}){
     font-size: 1.2rem;
   }
@@ -66,7 +68,7 @@ export const Btn = styled(Link)`
 export const Informacion = styled.div`
   display: flex;
   width: 75%;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 2em;
   text-align: center
   @media(${mobile}){
@@ -106,6 +108,7 @@ export const Iconos = styled.div`
     grid-template-columns: 25vw 25vw !important;
     justify-content: center;
     margin-bottom: 0;
+    padding: 0;
 
   }
   @media(min-width: 1420px){
@@ -145,6 +148,10 @@ export const GridItem = styled.div`
       grid-column: 2 span;
       grid-gap: 2em;
       align-items: center;
+      @media(${mobile}){
+        grid-template-columns: 1fr;
+        width: 100%;
+      }
       & ${Icono}{
         grid-column-start: 2;
       }

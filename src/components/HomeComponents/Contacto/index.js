@@ -49,20 +49,9 @@ export const ContactoHome = ()=> {
             </IconosItem>
           </Iconos>
           <Informacion>
-            <Info>
-              <li> <FaRegEnvelope/> info@orbittas.com</li>
-            </Info>
-            <Boton>
               <Btn to={`/contact`}>{c('button')}</Btn>
-            </Boton>
-            <Info>
-              <li> <FaMobileAlt/> +57 302 2457991</li>
-            </Info>
           </Informacion>
         </GridItem>
-        <Footer>
-          <Copy>&copy; Copyright {r('copy')}</Copy>
-        </Footer>
       </Grid>
     </Contacto>
   )
