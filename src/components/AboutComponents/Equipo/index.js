@@ -1,6 +1,7 @@
-import React from 'react'
-import {Equipo, Contenedor, Title, Grid, Item, Anchor, Head, Body, Nombre, Cargo, Hover, Red} from './styles'
+import React, {useState} from 'react'
+import {Equipo, Contenedor, Title, Grid, Item, Anchor, Head, Body, Nombre, Cargo, Hover, Red,LoaderCircle,LoaderCircleItem} from './styles'
 import { FaLinkedin} from "react-icons/fa";
+import {getItems} from '../../../hooks/getItems'
 
 const equipo = [
   
@@ -62,31 +63,65 @@ const equipo = [
   },
 ]
 let contador = 0;
+let ultimo
+let cuatro
+let cinco
 
-export const EquipoAbout = ()=>(
-  <Equipo>
-    <Contenedor>
-      <Title>Nuestro equipo</Title>
-      <Grid class="grid">
-      {
-        equipo.map(equipo => <Item>
-            <Head>
-              <img src={equipo.img} alt="persona"/>
-              <Red>
-                <Anchor href={equipo.linkedin} target="_blank" ><FaLinkedin/></Anchor>
-              </Red>
-              <Hover>
-                <img src={equipo.hover} alt="persona" class="img"/>
-              </Hover>
-            </Head>
-            <Body>
-              <Nombre>{equipo.name}</Nombre>
-              <Cargo>{equipo.cargo}</Cargo>
-            </Body>
-          </Item>
-        )
-      }
-      </Grid>
-    </Contenedor>
-  </Equipo>
-)
+export const EquipoAbout = ()=>{
+  const [loading, setLoading] = useState(false)
+  const [usuarios, errorUsuarios] = getItems(`${process.env.URL}/users`,setLoading)
+
+  console.log(usuarios)
+  return (
+    <Equipo>
+      <Contenedor>
+        <Title>Nuestro equipo</Title>
+        <Grid class="grid">
+        {
+          usuarios[0] === undefined
+          // true
+          ? <LoaderCircle><LoaderCircleItem></LoaderCircleItem></LoaderCircle>
+          : usuarios.map(equipo => {
+
+              contador += 1
+
+              if(contador === 3){
+                ultimo = true
+              } else{
+                ultimo = false
+              }
+
+              if(contador === 4){
+                cuatro = true;
+              } else{
+                cuatro = false
+              }
+
+              if(contador === 5){
+                cinco = true
+                contador = 0;
+              } else{
+                cinco = false
+              }
+
+
+
+              return <Item key={equipo._id} ultimo={ultimo} cuatro={cuatro} cinco={cinco} >
+                <Head>
+                  <img src={equipo.profileImage} alt="persona"/>
+                  <Hover>
+                    <img src={equipo.profileHover} alt="persona" class="img"/>
+                  </Hover>
+                </Head>
+                <Body>
+                  <Nombre>{equipo.name}</Nombre>
+                  <Cargo>{equipo.cargo}</Cargo>
+                </Body>
+              </Item>
+            })
+        }
+        </Grid>
+      </Contenedor>
+    </Equipo>
+  )
+}

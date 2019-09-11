@@ -1,6 +1,23 @@
-import styled from 'styled-components'
+import styled,{css} from 'styled-components'
 import {Margen} from '../../../styles/Styles'
 import {tablet,mobile,fuentePrincipal, colorPrincipal ,btn,gradient} from '../../../styles/variables'
+import {loaderCircle} from '../../../styles/animations'
+
+export const LoaderCircle = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  transform: translateZ(1px);
+`
+export const LoaderCircleItem = styled.div`
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 6px;
+  border-radius: 50%;
+  background: #fff;
+  ${loaderCircle()}
+`
 
 export const Equipo = styled.section`
   background: ${colorPrincipal};
@@ -39,21 +56,36 @@ export const Item = styled.div`
     width: 45%;
     margin-right: 0;
   }
-  :nth-of-type(3){
+  ${({ultimo})=> ultimo && css`
     margin-right: 0;
-  }
-  &:nth-of-type(4){
+  `}
+  ${({cuatro})=> cuatro && css`
     margin-left: 10em;
     @media(${tablet}){
       margin-left: 0;
     }
-  }
-  &:nth-of-type(5){
+  `}
+  ${({cinco})=> cinco && css`
     margin-right: 10em;
     @media(${tablet}){
       margin-right: 0;
     }
-  }
+  `}
+  // :nth-of-type(3){
+  //   margin-right: 0;
+  // }
+  // &:nth-of-type(4){
+  //   margin-left: 10em;
+  //   @media(${tablet}){
+  //     margin-left: 0;
+  //   }
+  // }
+  // &:nth-of-type(5){
+  //   margin-right: 10em;
+  //   @media(${tablet}){
+  //     margin-right: 0;
+  //   }
+  // }
 `
 export const Anchor = styled.a`
   color: white;

@@ -10,7 +10,7 @@ import {ParticulasFondo} from '../components/ParticulasFondo'
 
 const descripcion = 'Somos un equipo apasionado por la tecnología e innovación, conformado por profesionales en diversas áreas.'
 
-export default ({idioma, changed,handleChange})=>{
+export default ({idioma, changed,handleChange,propuesta})=>{
   let title
   if(!idioma){
     title = 'ORBITTAS - Agencia Digital'
@@ -24,7 +24,7 @@ export default ({idioma, changed,handleChange})=>{
     >
       <Contenedor>
         {/*<ParticulasFondo/>*/}
-        <HeroHome changed={changed} handleChange={handleChange} idioma={idioma}/>
+        <HeroHome changed={changed} handleChange={handleChange} idioma={idioma} propuesta={propuesta}/>
         <AboutHome idioma={idioma}/>
         <ServiciosHome idioma={idioma}/>
         <PortafolioHome idioma={idioma}/>

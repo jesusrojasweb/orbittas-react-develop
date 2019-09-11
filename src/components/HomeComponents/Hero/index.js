@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react'
-import {Particulas,Propulcion, Robot ,Hero, Copy, Item, Container, Btn, Cursor, Subitle, Title} from "./styles";
+import React, {useState, useEffect, Fragment} from 'react'
+import {Particulas,Propulcion, Robot ,Hero, Copy, Item, Container, Btn, Cursor, Subitle, Title,Propuesta1,Propuesta2,Robot2} from "./styles";
 import Particles from 'react-particles-js'
 import {useTranslate} from 'react-translate'
 
@@ -108,10 +108,33 @@ const particles = {
               },
               "retina_detect":true}
 
-export const HeroHome = ({idioma, changed,handleChange})=>{
+let Propuesta
+
+export const HeroHome = ({idioma, changed,handleChange, propuesta})=>{
   let t = useTranslate('heroHomePage')
   let tagline = t('tagline');
   const [word,changeWord] = escritura(tagline)
+
+  if(propuesta === 1){
+    console.log('entramos')
+   Propuesta = ()=> <Propuesta1 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta1-mujer.png?alt=media&token=6ed5dac7-4f8f-4daf-a360-51f8eadefe31" /> 
+  }
+  if(propuesta === 2){
+    Propuesta = ()=> <Propuesta2 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta2-mujer.png?alt=media&token=0640b8ac-a877-42f9-9afe-3f4e424dd612" />
+  }
+  if(propuesta === 3){
+    Propuesta = ()=> <Fragment>
+          <Robot>
+            <img src="https://jesusrojasweb.github.io/orbittas/img/robot.png" alt="robot"/>
+          </Robot>
+          <Propulcion>
+            <img src="https://jesusrojasweb.github.io/orbittas/img/propulcion.png" alt="propulcion"/>          
+          </Propulcion>
+        </Fragment>
+  }
+  if(propuesta === 4){
+    Propuesta = ()=> <Robot2 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Frobot-frente.png?alt=media&token=eef1f60f-6824-4594-9c5e-8f10c39694b0" />
+  }
 
   return (
     <Hero>
@@ -135,13 +158,7 @@ export const HeroHome = ({idioma, changed,handleChange})=>{
 
         </Item>
         <Item>
-          <Robot>
-            <img src="https://jesusrojasweb.github.io/orbittas/img/robot.png" alt="robot"/>
-          </Robot>
-          <Propulcion>
-            <img src="https://jesusrojasweb.github.io/orbittas/img/propulcion.png" alt="propulcion"/>          
-          </Propulcion>
-
+          <Propuesta/>
         </Item>
       </Copy>
     </Hero>

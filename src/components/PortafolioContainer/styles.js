@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components'
-import {tablet, mobile  } from "../../styles/variables";
+import {tablet, mobile, colorFluerecente} from "../../styles/variables";
 import {loaderCircle} from '../../styles/animations'
 
 export const LoaderCircle = styled.div`
@@ -12,7 +12,7 @@ export const LoaderCircleItem = styled.div`
   height: 100px;
   margin: 6px;
   border-radius: 50%;
-  background: #fff;
+  background: ${colorFluerecente};
   ${loaderCircle()}
 `
 

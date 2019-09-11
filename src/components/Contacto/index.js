@@ -156,13 +156,7 @@ export const ContactoPage = (props)=>{
             </Formulario>
           </Muestra>
         </Item>
-        <Item>
-          <Sociales fondo={true}/>
-        </Item>
         <ParticulasBajo/>
-        <Footer>
-          <Copy>&copy; Copyright {c('copy')}</Copy>
-        </Footer>
       </Grid>
     </Contacto>
   )

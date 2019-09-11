@@ -22,13 +22,13 @@ export const Footer = ()=>{
           <Title>Redes Sociales</Title>
           <Sociales>
             <li>
-              <Icono href="#"><FaFacebook/></Icono>
+              <Icono href="https://www.facebook.com/orbittas" target="_blank"><FaFacebook/></Icono>
             </li>
             <li>
-              <Icono href="#"><FaInstagram/></Icono>
+              <Icono href="https://www.instagram.com/orbittas/" target="_blank"><FaInstagram/></Icono>
             </li>
             <li>
-              <Icono href="#"><FaWhatsapp/></Icono>
+              <Icono href="http://consultas.orbittas.com" target="_blank"><FaWhatsapp/></Icono>
             </li>
           </Sociales>
         </div>

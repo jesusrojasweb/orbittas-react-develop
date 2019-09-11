@@ -26,6 +26,7 @@ let contador = 0
 export const App = ()=> {
   const [ruta, setRuta] = useState(null)
   const [idiomaChanded, setIdiomaChanded] = useState(false)
+  const [propuesta, setPropuesta] = useState(Math.round(Math.random() * (4 - 1)) + 1)
   let language = navigator.language
   let otroIdioma = language.split('-')
   let inicioDeIdioma
@@ -52,15 +53,15 @@ export const App = ()=> {
       <Suspense fallback={<Loading/>}>
         <GlobalStyle/>
         <Fuentes/>
-        <Menu index={ruta} lang={lang} changeIdioma={handleIdioma} idioma={idioma}/>
+        <Menu index={ruta} lang={lang} changeIdioma={handleIdioma} idioma={idioma} changeProp={setPropuesta} propuesta={propuesta} />
         <Router>
-          <Home changed={idiomaChanded} handleChange={setIdiomaChanded}  idioma={idioma} path={`/`}/>
+          <Home changed={idiomaChanded} handleChange={setIdiomaChanded}  idioma={idioma} path={`/`} propuesta={propuesta} />
           <About idioma={idioma} lang={lang} path={`/about`} />
+          <Loading path={`/loader`} />
           <Services idioma={idioma} lang={lang} path={`/services`} />
           <Portfolio lang={lang} path={`/portfolio`} />
           <Contact lang={lang} path={`/contact`} />
           <Proyect lang={idioma} path={`/portfolio/:link`} handleRuta={setRuta}  />
-          <Loading path={`/loading`} />
         </Router>
         <Footer/>
       </Suspense>

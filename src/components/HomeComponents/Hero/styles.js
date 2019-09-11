@@ -13,7 +13,6 @@ export const Particulas = styled(Particles)`
   left: 0;
   z-index: 0;
 `
-
 export const Hero = styled.section`
   box-sizing: border-box;
   position: relative;
@@ -155,4 +154,22 @@ export const Btn = styled(Link)`
    ${gradient()}
    border-color: rgb(0,121,147);
    color: white;
+`
+export const Propuesta1 = styled.img`
+  position: absolute;
+  bottom: 0;
+  width: 25% !important;
+  right: 12em;
+`
+export const Propuesta2 = styled.img`
+  position: absolute;
+  bottom: 0;
+  width: 30% !important;
+  right: 9em;
+`
+export const Robot2 = styled.img`
+  position: absolute;
+  width: 26% !important;
+  bottom: 6em;
+  right: 10em;
 `
