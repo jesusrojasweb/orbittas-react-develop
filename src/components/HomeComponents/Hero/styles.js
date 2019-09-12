@@ -37,6 +37,16 @@ export const Propulcion = styled.div`
   }
 
 `
+
+export const Propuesta1Hover = styled.img`
+  position: absolute;
+  bottom: 1em;
+  width: 30% !important;
+  right: 10em;
+  opacity: 0;
+  transition: .3s;
+`
+
 export const Item = styled.div`
   &:first-child{
     display: flex;
@@ -57,6 +67,11 @@ export const Item = styled.div`
   &:last-child{
     padding-top: 1.5em;
     z-index: 500;
+    &:hover{
+      & ${Propuesta1Hover}{
+        opacity: 1;
+      }
+    }
     & ${Robot}, & ${Propulcion}{
       display: flex;
       justify-content: center;
@@ -95,7 +110,7 @@ export const Copy = styled.div`
   transition: .3s;
   tpadding-top: 11em;
   ${({idioma}) => idioma && css`
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns:  5fr 3fr;
     & ${Title}{
       font-size: 7rem;
     }
@@ -157,9 +172,9 @@ export const Btn = styled(Link)`
 `
 export const Propuesta1 = styled.img`
   position: absolute;
-  bottom: 0;
-  width: 25% !important;
-  right: 12em;
+  bottom: 1em;
+  width: 30% !important;
+  right: 10em;
 `
 export const Propuesta2 = styled.img`
   position: absolute;
@@ -167,9 +182,21 @@ export const Propuesta2 = styled.img`
   width: 30% !important;
   right: 9em;
 `
-export const Robot2 = styled.img`
+export const Propuesta3 = styled.img`
   position: absolute;
-  width: 26% !important;
-  bottom: 6em;
-  right: 10em;
+  bottom: 2em;
+  width: 30% !important;
+  right: 9em;
 `
+export const Propuesta4 = styled.img`
+  position: absolute;
+  bottom: 4em;
+  width: 30% !important;
+  right: 9em;
+`
+// export const Robot2 = styled.img`
+//   position: absolute;
+//   width: 26% !important;
+//   bottom: 6em;
+//   right: 10em;
+// `

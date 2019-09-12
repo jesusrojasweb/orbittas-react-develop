@@ -1,5 +1,5 @@
 import React, {useState, useEffect, Fragment} from 'react'
-import {Particulas,Propulcion, Robot ,Hero, Copy, Item, Container, Btn, Cursor, Subitle, Title,Propuesta1,Propuesta2,Robot2} from "./styles";
+import {Particulas,Propulcion, Robot ,Hero, Copy, Item, Container, Btn, Cursor, Subitle, Title,Propuesta1,Propuesta2,Robot2,Propuesta3, Propuesta4,Propuesta1Hover} from "./styles";
 import Particles from 'react-particles-js'
 import {useTranslate} from 'react-translate'
 
@@ -117,24 +117,31 @@ export const HeroHome = ({idioma, changed,handleChange, propuesta})=>{
 
   if(propuesta === 1){
     console.log('entramos')
-   Propuesta = ()=> <Propuesta1 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta1-mujer.png?alt=media&token=6ed5dac7-4f8f-4daf-a360-51f8eadefe31" /> 
+   Propuesta = ()=> (
+     <Fragment>
+       <Propuesta1 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta-mujer-1.5.png?alt=media&token=b119f118-c150-4073-a57e-095334625ed8" />
+       <Propuesta1Hover src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta-mujer-1.5-hover.png?alt=media&token=31474eeb-07f3-46a6-a03d-8704b0d46736" />
+     </Fragment>
+   )
   }
   if(propuesta === 2){
-    Propuesta = ()=> <Propuesta2 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta2-mujer.png?alt=media&token=0640b8ac-a877-42f9-9afe-3f4e424dd612" />
+    Propuesta = ()=> <Propuesta2 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta-mujer-2.png?alt=media&token=08e73258-cfe6-407b-bac4-41b819dd8dea" />
   }
   if(propuesta === 3){
-    Propuesta = ()=> <Fragment>
-          <Robot>
-            <img src="https://jesusrojasweb.github.io/orbittas/img/robot.png" alt="robot"/>
-          </Robot>
-          <Propulcion>
-            <img src="https://jesusrojasweb.github.io/orbittas/img/propulcion.png" alt="propulcion"/>          
-          </Propulcion>
-        </Fragment>
+    Propuesta = ()=> <Propuesta3 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta-mujer-3.png?alt=media&token=a1559550-e009-411c-b961-f0f44ea50c6e" />
   }
   if(propuesta === 4){
-    Propuesta = ()=> <Robot2 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Frobot-frente.png?alt=media&token=eef1f60f-6824-4594-9c5e-8f10c39694b0" />
+    Propuesta = ()=> <Propuesta4 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta-mujer-4.png?alt=media&token=ba52a7ff-4ce7-4185-a632-72a8004e2062" />
   }
+  // <Robot2 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Frobot-frente.png?alt=media&token=eef1f60f-6824-4594-9c5e-8f10c39694b0" />
+  //<Fragment>
+  //          <Robot>
+  //            <img src="https://jesusrojasweb.github.io/orbittas/img/robot.png" alt="robot"/>
+  //          </Robot>
+  //          <Propulcion>
+  //            <img src="https://jesusrojasweb.github.io/orbittas/img/propulcion.png" alt="propulcion"/>          
+  //          </Propulcion>
+  //        </Fragment>
 
   return (
     <Hero>
