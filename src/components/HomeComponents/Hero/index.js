@@ -110,29 +110,11 @@ const particles = {
 
 let Propuesta
 
-export const HeroHome = ({idioma, changed,handleChange, propuesta})=>{
+export const HeroHome = ({idioma, changed,handleChange})=>{
   let t = useTranslate('heroHomePage')
   let tagline = t('tagline');
   const [word,changeWord] = escritura(tagline)
 
-  if(propuesta === 1){
-    console.log('entramos')
-   Propuesta = ()=> (
-     <Fragment>
-       <Propuesta1 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta-mujer-1.5.png?alt=media&token=b119f118-c150-4073-a57e-095334625ed8" />
-       <Propuesta1Hover src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta-mujer-1.5-hover.png?alt=media&token=31474eeb-07f3-46a6-a03d-8704b0d46736" />
-     </Fragment>
-   )
-  }
-  if(propuesta === 2){
-    Propuesta = ()=> <Propuesta2 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta-mujer-2.png?alt=media&token=08e73258-cfe6-407b-bac4-41b819dd8dea" />
-  }
-  if(propuesta === 3){
-    Propuesta = ()=> <Propuesta3 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta-mujer-3.png?alt=media&token=a1559550-e009-411c-b961-f0f44ea50c6e" />
-  }
-  if(propuesta === 4){
-    Propuesta = ()=> <Propuesta4 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta-mujer-4.png?alt=media&token=ba52a7ff-4ce7-4185-a632-72a8004e2062" />
-  }
   // <Robot2 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Frobot-frente.png?alt=media&token=eef1f60f-6824-4594-9c5e-8f10c39694b0" />
   //<Fragment>
   //          <Robot>
@@ -165,7 +147,10 @@ export const HeroHome = ({idioma, changed,handleChange, propuesta})=>{
 
         </Item>
         <Item>
-          <Propuesta/>
+          <Fragment>
+            <Propuesta1 src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta-mujer-1.5.png?alt=media&token=b119f118-c150-4073-a57e-095334625ed8" />
+            <Propuesta1Hover src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fpropuesta-mujer-1.5-hover.png?alt=media&token=31474eeb-07f3-46a6-a03d-8704b0d46736" />
+          </Fragment>
         </Item>
       </Copy>
     </Hero>

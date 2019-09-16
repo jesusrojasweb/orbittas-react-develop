@@ -5,12 +5,15 @@ import {IconosItem ,Contacto, Btn, Caracteristica, Grid, Descripcion, Icono,
 import { FaFacebook, FaInstagram, FaWhatsapp, FaTelegram,FaRegEnvelope,FaMobileAlt} from "react-icons/fa";
 import {useTranslate} from 'react-translate'
 import {Sociales} from '../../Sociales'
+import {ConexionArriba} from '../../ConexionArriba'
+import {ParticulasBajo} from '../../PartitulasBajo'
 
 export const ContactoHome = ()=> {
   const c = useTranslate('contactHomePage')
   const r = useTranslate('copyRight')
   return(
     <Contacto>
+      <ParticulasBajo/>
       <Grid>
         <GridItem>
           <Animanos>{c('title')}</Animanos>
@@ -53,6 +56,7 @@ export const ContactoHome = ()=> {
           </Informacion>
         </GridItem>
       </Grid>
+      <ConexionArriba/>
     </Contacto>
   )
 }

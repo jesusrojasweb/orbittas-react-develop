@@ -3,7 +3,7 @@ import {colorFluerecente ,colorPrincipal, colorSecundario,fuenteSecundaria, mobi
 import {Margen} from "../../styles/Styles";
 import {loaderCircle} from "../../styles/animations";
 import {FaUpload} from "react-icons/fa";
-import {floating} from '../../styles/animations'
+import {floating, rotate} from '../../styles/animations'
 
 export const LoaderCircle = styled.div`
   display: inline-block;
@@ -201,10 +201,10 @@ export const Btn = styled.button`
     outline: none;
   }
 `
-export const Img = styled.img`
-  width: 49%;
-  margin-left: 1em;
-`
+// export const Img = styled.img`
+//   width: 49%;
+//   margin-left: 1em;
+// `
 export const ImgSend = styled.img`
   width: 42%;
 `
@@ -219,6 +219,30 @@ export const Robots = styled.div`
     display: none;
   }
 `
+export const Imagen = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 15em
+  & img{
+    position: absolute;
+    width: 90%;
+    &:first-child{
+      width: 70%;
+    }
+  }
+  @media(${mobile}){
+    display: none;
+  }
+`
+export const ImageRotate = styled.img`
+  ${rotate}
+`
+export const Img = styled.img`
+  border-radius: 50%;
+`
+
 export const Propulcion = styled.div`
   margin-top: -1em;
   display: flex;

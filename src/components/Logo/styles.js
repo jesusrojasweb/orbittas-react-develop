@@ -3,7 +3,7 @@ import {rotate, rotateLeft} from '../../styles/animations'
 import {mobile} from '../../styles/variables'
 
 export const Svg = styled.svg`
-  width: 80%;
+  width: 50%;
   @media(${mobile}){
     width: 60%;
     margin: 0 auto;

@@ -39,12 +39,22 @@ export const Propulcion = styled.div`
 `
 
 export const Propuesta1Hover = styled.img`
+  z-index: 20;
   position: absolute;
-  bottom: 1em;
+  bottom: -3em;
   width: 30% !important;
   right: 10em;
   opacity: 0;
   transition: .3s;
+  transform: rotateZ(180deg) rotateX(180deg);
+  @media(${mobile}){
+    bottom: -6em;
+    width: 60% !important;
+    right: 20%;
+  }
+  @media(${min}){
+    right: -2em;
+  }
 `
 
 export const Item = styled.div`
@@ -83,9 +93,6 @@ export const Item = styled.div`
       position: relative !important;
       margin-top: 3em;
     }
-    @media(${min}){
-      display: none;
-    }
   } 
 `
 export const Title = styled.h1`
@@ -120,8 +127,6 @@ export const Copy = styled.div`
   }
   @media(${mobile}){
     padding: 0 2em;
-  }
-  @media(${min}){
     height: 100vh !important;
   }
   @media(${tablet}){
@@ -171,32 +176,18 @@ export const Btn = styled(Link)`
    color: white;
 `
 export const Propuesta1 = styled.img`
+  z-index: 20;
   position: absolute;
-  bottom: 1em;
+  bottom: -3em;
   width: 30% !important;
   right: 10em;
+  transform: rotateZ(180deg) rotateX(180deg);
+  @media(${mobile}){
+    bottom: -6em;
+    width: 60% !important;
+    right: 20%;
+  }
+  @media(${min}){
+    right: -2em;
+  }
 `
-export const Propuesta2 = styled.img`
-  position: absolute;
-  bottom: 0;
-  width: 30% !important;
-  right: 9em;
-`
-export const Propuesta3 = styled.img`
-  position: absolute;
-  bottom: 2em;
-  width: 30% !important;
-  right: 9em;
-`
-export const Propuesta4 = styled.img`
-  position: absolute;
-  bottom: 4em;
-  width: 30% !important;
-  right: 9em;
-`
-// export const Robot2 = styled.img`
-//   position: absolute;
-//   width: 26% !important;
-//   bottom: 6em;
-//   right: 10em;
-// `

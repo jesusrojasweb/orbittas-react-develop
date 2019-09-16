@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import firebase from 'firebase'
-import {Upload,Contacto, Grid, Animanos, Item,Formulario, TextArea, InputName, InputEmail, FileUpload, Linea, Span,InputFile, Btn, Footer, Copy,LoaderCircle, LoaderCircleItem, Aviso, Muestra, Img, Robots,ImgSend,Pregress,Propulcion} from './styles'
+import {Upload,Contacto, Grid, Animanos, Item,Formulario, TextArea, InputName, InputEmail, FileUpload, Linea, Span,InputFile, Btn, Footer, Copy,LoaderCircle, LoaderCircleItem, Aviso, Muestra, Img, Robots,ImgSend,Pregress,Propulcion, Imagen, ImageRotate} from './styles'
 import { FaFacebook, FaInstagram, FaWhatsapp, FaTelegram,FaCheck,FaExclamationTriangle} from "react-icons/fa";
 import {ParticulasBajo} from '../PartitulasBajo'
 import {useTranslate} from 'react-translate'
@@ -110,14 +110,11 @@ export const ContactoPage = (props)=>{
           <Muestra>
             <div>
               {/*<Animanos>{t('title')}</Animanos>*/}
-              <Robots>
               {/*!success*/}
-                { !success && <ImgSend src="https://jesusrojasweb.github.io/orbittas/img/robotSend.png" alt="robot send"/>}
-                {success && <Img src="https://jesusrojasweb.github.io/orbittas/img/robotLeft.png" alt="robot left"/>}
-                <Propulcion>
-                  <img src="https://jesusrojasweb.github.io/orbittas/img/propulcion.png" alt="propulcion"/> 
-                </Propulcion>
-              </Robots>
+              <Imagen>
+                <Img src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fquienes-somos.png?alt=media&token=2b1c74a4-c340-46c7-bcec-e9cfa6e12410" alt=""/>
+                <ImageRotate src="https://jesusrojasweb.github.io/orbittas/img/somos.png" alt=""/>
+              </Imagen>
             </div>
             <Formulario onSubmit={handleSubmit}>
               <InputName onChange={e => {setName(e.target.value); handleChange()}} value={name} name="name" type="text" placeholder={t('name')} required=""/>
@@ -161,3 +158,8 @@ export const ContactoPage = (props)=>{
     </Contacto>
   )
 }  
+// { !success && <ImgSend src="https://jesusrojasweb.github.io/orbittas/img/robotSend.png" alt="robot send"/>}
+// {success && <Img src="https://jesusrojasweb.github.io/orbittas/img/robotLeft.png" alt="robot left"/>}
+// <Propulcion>
+//   <img src="https://jesusrojasweb.github.io/orbittas/img/propulcion.png" alt="propulcion"/> 
+// </Propulcion>

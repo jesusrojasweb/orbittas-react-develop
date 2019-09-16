@@ -4,12 +4,16 @@ import {colorPrincipal, fuentePrincipal, colorFluerecente, mobile} from '../../s
 export const FooterContainer = styled.footer`
   background: ${colorPrincipal};
   padding: 2em 6em 1em;
+  @media(${mobile}){
+    padding: 2em 2em 1em;
+  }
 `
 
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5em;
+  justify-items: center;
   @media(${mobile}){
     grid-gap: 2em;
     grid-template-columns: 1fr;
@@ -17,10 +21,8 @@ export const Grid = styled.div`
 `
 
 export const Item = styled.div`
-  @media(${mobile}){
-    display: flex;
-    justify-contnent: center;
-  }
+  display: flex;
+  justify-content: center;
 `
 
 export const Img = styled.img`

@@ -3,65 +3,6 @@ import {Equipo, Contenedor, Title, Grid, Item, Anchor, Head, Body, Nombre, Cargo
 import { FaLinkedin} from "react-icons/fa";
 import {getItems} from '../../../hooks/getItems'
 
-const equipo = [
-  
-  {
-    "img": "https://jesusrojasweb.github.io/orbittas/img/equipo-normal.jpg",
-    "hover": "https://jesusrojasweb.github.io/orbittas/img/equipo-hover.jpg",
-    "name": "Nombre Apellido",
-    "cargo": "Este es el cargo",
-    "linkedin": "#"
-  },
-  {
-    "img": "https://jesusrojasweb.github.io/orbittas/img/equipo-normal.jpg",
-    "hover": "https://jesusrojasweb.github.io/orbittas/img/equipo-hover.jpg",
-    "name": "Nombre Apellido",
-    "cargo": "Este es el cargo",
-    "linkedin": "#"
-  },
-  {
-    "img": "https://jesusrojasweb.github.io/orbittas/img/equipo-normal.jpg",
-    "hover": "https://jesusrojasweb.github.io/orbittas/img/equipo-hover.jpg",
-    "name": "Nombre Apellido",
-    "cargo": "Este es el cargo",
-    "linkedin": "#"
-  },
-  {
-    "img": "https://jesusrojasweb.github.io/orbittas/img/equipo-normal.jpg",
-    "hover": "https://jesusrojasweb.github.io/orbittas/img/equipo-hover.jpg",
-    "name": "Nombre Apellido",
-    "cargo": "Este es el cargo",
-    "linkedin": "#"
-  },
-  {
-    "img": "https://jesusrojasweb.github.io/orbittas/img/equipo-normal.jpg",
-    "hover": "https://jesusrojasweb.github.io/orbittas/img/equipo-hover.jpg",
-    "name": "Nombre Apellido",
-    "cargo": "Este es el cargo",
-    "linkedin": "#"
-  },
-  {
-    "img": "https://jesusrojasweb.github.io/orbittas/img/equipo-normal.jpg",
-    "hover": "https://jesusrojasweb.github.io/orbittas/img/equipo-hover.jpg",
-    "name": "Nombre Apellido",
-    "cargo": "Este es el cargo",
-    "linkedin": "#"
-  },
-  {
-    "img": "https://jesusrojasweb.github.io/orbittas/img/equipo-normal.jpg",
-    "hover": "https://jesusrojasweb.github.io/orbittas/img/equipo-hover.jpg",
-    "name": "Nombre Apellido",
-    "cargo": "Este es el cargo",
-    "linkedin": "#"
-  },
-  {
-    "img": "https://jesusrojasweb.github.io/orbittas/img/equipo-normal.jpg",
-    "hover": "https://jesusrojasweb.github.io/orbittas/img/equipo-hover.jpg",
-    "name": "Nombre Apellido",
-    "cargo": "Este es el cargo",
-    "linkedin": "#"
-  },
-]
 let contador = 0;
 let ultimo
 let cuatro
@@ -84,25 +25,24 @@ export const EquipoAbout = ()=>{
           : usuarios.map(equipo => {
 
               contador += 1
-
-              if(contador === 3){
-                ultimo = true
-              } else{
-                ultimo = false
-              }
-
-              if(contador === 4){
+              if(contador === 1){
                 cuatro = true;
               } else{
                 cuatro = false
               }
 
-              if(contador === 5){
+              if(contador === 2){
                 cinco = true
-                contador = 0;
               } else{
                 cinco = false
               }
+              if(contador === 5){
+                ultimo = true
+                contador = 0;
+              } else{
+                ultimo = false
+              }
+              console.log(contador)
 
 
 

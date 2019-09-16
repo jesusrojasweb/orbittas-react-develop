@@ -11,6 +11,8 @@ export const About = styled.section`
   position: relative;
   overflow-x: visible;
   position: relative;
+  background: ${colorPrincipal};
+  z-index: 600;
   @media(${mobile}){
     height: auto;
   }
@@ -139,4 +141,7 @@ export const Btn = styled(Link)`
 `
 export const Contenedor = styled.div`
   background: none;
+`
+export const Img = styled.img`
+  border-radius: 50%;
 `

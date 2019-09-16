@@ -3,6 +3,7 @@ import {HeroHome} from '../components/HomeComponents/Hero'
 import {AboutHome} from "../components/HomeComponents/About";
 import {ServiciosHome} from "../components/HomeComponents/Servicios";
 import {PortafolioHome} from "../components/HomeComponents/Portafolio";
+import {Testimonios} from "../components/Testimonios";
 import {SEO} from "../components/SEO";
 import {ContactoHome} from "../components/HomeComponents/Contacto";
 import {Contenedor} from './HomeStyles'
@@ -28,6 +29,7 @@ export default ({idioma, changed,handleChange,propuesta})=>{
         <AboutHome idioma={idioma}/>
         <ServiciosHome idioma={idioma}/>
         <PortafolioHome idioma={idioma}/>
+        <Testimonios idioma={idioma} />
         <ContactoHome idioma={idioma}/>
       </Contenedor>
     </SEO>

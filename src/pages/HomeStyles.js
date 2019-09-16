@@ -3,5 +3,4 @@ import {colorPrincipal} from '../styles/variables'
 
 export const Contenedor = styled.div`
   position: relative;
-  background: ${colorPrincipal};
 `

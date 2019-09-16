@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 import {Margen} from "../../../styles/Styles";
-import {btn, colorPrincipal, fuentePrincipal, gradient, mobile, tablet, min,tituloSecundario} from "../../../styles/variables";
+import {btn, colorPrincipal, fuentePrincipal, gradient, mobile, tablet, min,tituloSecundario, colorFluerecente} from "../../../styles/variables";
 import {Link} from "@reach/router";
 
 export const Contacto = styled.section`
   overflow: hidden;
-  background: white;
+  background: ${colorPrincipal};
+  position: relative;
 `
 
 export const Grid = styled.div`
@@ -43,7 +44,7 @@ export const Grid = styled.div`
 `
 
 export const Animanos = styled.h2`
-  color: ${colorPrincipal};
+  color: white;
   font-family: ${tituloSecundario};
   font-size: 1.17rem;
   margin-bottom: 2em;
@@ -61,9 +62,13 @@ export const Boton = styled.div`
   }
 `
 export const Btn = styled(Link)`
-    ${btn()}
-    ${gradient()}
-    border-color: rgb(0,121,147);
+  ${btn()}
+  z-index: 900;
+  &:hover{
+    border-color: ${colorFluerecente};
+    background: ${colorFluerecente};
+    color: ${colorPrincipal};
+  }
 `
 export const Informacion = styled.div`
   display: flex;
@@ -127,6 +132,7 @@ export const Caracteristica = styled.div`
   background: none;
 `
 export const Descripcion = styled.p`
+  color white;
   @media(${mobile}){
 
     font-size: .55rem;

@@ -7,6 +7,7 @@ export const Portafolio = styled.section`
   align-items: center;
   position: relative;
   background: none;
+  background: ${colorPrincipal};
 `
 export const Grid = styled.div`
   ${Margen}
