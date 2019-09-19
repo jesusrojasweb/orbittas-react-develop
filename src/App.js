@@ -8,6 +8,7 @@ import {Fuentes} from './styles/fuentes'
 import {Menu} from './components/Menu'
 import {Footer} from './components/Footer'
 import {Loading} from './components/Loading'
+import {BotonContacto} from './components/BotonContacto'
 // import {Home} from './pages/Home'
 // import {Services} from './pages/Services'
 // import {About} from './pages/About'
@@ -58,11 +59,12 @@ export const App = ()=> {
           <About idioma={idioma} lang={lang} path={`/about`} />
           <Loading path={`/loader`} />
           <Services idioma={idioma} lang={lang} path={`/services`} />
-          <Portfolio lang={lang} path={`/portfolio`} />
-          <Contact lang={lang} path={`/contact`} />
-          <Proyect lang={idioma} path={`/portfolio/:link`} handleRuta={setRuta}  />
+          <Portfolio idioma={idioma} path={`/portfolio`} />
+          <Contact idioma={idioma} path={`/contact`} />
+          <Proyect idioma={idioma} path={`/portfolio/:link`} handleRuta={setRuta}  />
         </Router>
         <Footer/>
+        <BotonContacto/>
       </Suspense>
     </TranslatorProvider>
   )

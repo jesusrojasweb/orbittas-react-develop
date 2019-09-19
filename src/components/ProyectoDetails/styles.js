@@ -87,7 +87,7 @@ export const Item = styled.h4`
 `
 export const Imagen = styled.div`
   width: 100%;
-  background: ${colorPrincipal};
+  background: white;
   margin: 2em 0;
   & img{
     vertical-align: top;

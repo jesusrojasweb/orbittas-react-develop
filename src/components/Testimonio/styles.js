@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components'
-import {colorPrincipal, tituloSecundario, fuenteSecundaria, mobile, min} from '../../styles/variables'
+import {colorPrincipal, tituloSecundario, fuenteSecundaria, mobile, min, desktop} from '../../styles/variables'
 
 export const Figure = styled.figure`
   border-radius: 50%;
@@ -8,17 +8,14 @@ export const Figure = styled.figure`
   position: absolute;
   width: 10%;
   left: 45%;
-  top: -22.5%;
+  top: -15%;
   padding-bottom: 10%;
   height: 0px;
   @media(${mobile}){
     width: 30%;
     left: 35%;
-    top: -7%;
+    top: -50px;
     padding-bottom: 30%;
-  }
-  @media(${min}){
-    top: -4% !important;
   }
 `
 
@@ -38,27 +35,72 @@ export const Container = styled.div`
     box-shadow: 0px 6px 20px 5px lightgrey;
   }
   @media(${mobile}){
-    width: 85%;
+    width: 100%;
   }
 `
 export const Relative = styled.div`
   position: relative;
   padding: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media(${mobile}){
     padding: 2em;
   }
 `
 
+export const Cita = styled.blockquote`
+  margin: 0;
+`
+
 export const Descripcion = styled.p`
   font-size: 1rem;
+  &:before{
+    content: open-quote;
+  }
+  &:after{
+    content: close-quote;
+  }
+`
+export const Persona = styled.figure`
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid ${colorPrincipal};
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0px;
+  @media(${mobile}){
+    display: none;
+  }
 `
 
 export const Nombre = styled.h4`
   color: ${colorPrincipal};
   font-family: ${tituloSecundario};
+  ${({solo})=> !solo && css`
+    text-align: left;
+  `}
 `
 
 export const Cargo = styled.small`
   font-family: ${fuenteSecundaria};
   color: ${colorPrincipal};
+  ${({solo})=> !solo && css`
+    @media(${desktop}){
+      text-align: left;
+      margin-left: -4em;
+    }
+  `}
+`
+
+export const Contenedor = styled.div`
+  width: 50%;
+`
+export const Informacion = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2em;
+  @media(${mobile}){
+    grid-template-columns: 1fr;
+  }
 `

@@ -5,6 +5,7 @@ import {Link} from '@reach/router'
 
 export const Item = styled.div`
   background: none;
+  align-self: center;
 `
 
 export const Grid = styled.div`
@@ -12,6 +13,8 @@ export const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5em;
+  height: auto;
+  padding-top: 4em;
   @media(${tablet}){
     grid-template-columns: 1fr;
     height: auto;
@@ -29,6 +32,7 @@ export const Img = styled.img`
 `
 export const Servicio = styled.section`
   background: white;
+  position: relative;
   ${props => !props.right && css`
     background: #007993;
     background:rgba(0,121,147,.1);
@@ -81,6 +85,10 @@ export const Lista = styled.ul`
   list-style: none;
   padding-left: 2em;
   margin-bottom: 2em;
+  ${({grid})=> grid && css`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  `}
 `
 export const ListItem = styled.li`
   padding-bottom: 1em;

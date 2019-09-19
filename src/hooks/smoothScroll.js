@@ -1,7 +1,8 @@
 export const smoothScroll = (target, duration)=> {
+  window.scrollBy(0, -window.innerHeight);
   let targe = document.getElementById(target);
   let targetPosition = targe.getBoundingClientRect().top;
-  let startPosition = window.pageYOffset;
+  let startPosition = 0;
   let distance = targetPosition - startPosition;
   let startTime = null;
   

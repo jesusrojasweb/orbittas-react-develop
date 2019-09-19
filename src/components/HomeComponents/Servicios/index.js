@@ -9,9 +9,9 @@ export const ServiciosHome = ()=> {
   return(
       <Servicios>
         <Grid>
-          <Title>Te apoyamos con desarrollos en diversas áreas</Title>
+          <Title>{servicios('title')}</Title>
           <Item>
-            <Head to={`/services#proyectos`}>
+            <Head to={`/services#proyecto`}>
               <Proyectos/>
             </Head>
             <NombreServicio>{servicios('proyects')}</NombreServicio>

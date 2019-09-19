@@ -3,7 +3,7 @@ import {Proyectos,LoaderCircle,LoaderCircleItem} from './styles'
 import {ProyectoItem} from "../ProyectoItem";
 import PropTypes from 'prop-types'
 
-export const PortafolioContainer = ({proyectos, pagina, lang})=>{
+export const PortafolioContainer = ({proyectos, pagina, idioma})=>{
   
   return(
     <Proyectos pagina={pagina}>
@@ -14,13 +14,7 @@ export const PortafolioContainer = ({proyectos, pagina, lang})=>{
           ? [1,2,3,4,5,6].map(indice=>   <LoaderCircle key={indice} ><LoaderCircleItem></LoaderCircleItem></LoaderCircle>)
           : [1,2,3,4].map(indice=>   <LoaderCircle key={indice} ><LoaderCircleItem></LoaderCircleItem></LoaderCircle>)
 
-        : proyectos.map(idioma =>{
-            if(lang == 'es'){
-              return <ProyectoItem link={idioma.link} lang={lang} key={idioma._id} {...idioma} lang={lang} />
-            } else{
-              return <ProyectoItem link={idioma.link} lang={lang} key={idioma._id} {...idioma} lang={lang}/>
-            }
-          })
+        : proyectos.map(proyecto =><ProyectoItem link={proyecto.link} idioma={idioma} key={proyecto._id} {...proyecto}/>)
       }
     </Proyectos>
   )

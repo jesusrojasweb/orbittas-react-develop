@@ -12,7 +12,7 @@ export const Contacto = styled.section`
 export const Grid = styled.div`
   ${Margen}
   display: grid;
-  grid-template-columns: 1fr 50px;
+  grid-template-columns: 1fr;
   grid-gap: 0 2em;
   padding-bottom: 0;
   position: relative;

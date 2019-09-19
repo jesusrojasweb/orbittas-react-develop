@@ -41,9 +41,9 @@ export const Propulcion = styled.div`
 export const Propuesta1Hover = styled.img`
   z-index: 20;
   position: absolute;
-  bottom: -3em;
-  width: 30% !important;
-  right: 10em;
+  bottom: -6em;
+  width: 80% !important;
+  right: 2em;
   opacity: 0;
   transition: .3s;
   transform: rotateZ(180deg) rotateX(180deg);
@@ -53,7 +53,8 @@ export const Propuesta1Hover = styled.img`
     right: 20%;
   }
   @media(${min}){
-    right: -2em;
+    bottom: -2em;
+    right: 0;
   }
 `
 
@@ -77,6 +78,7 @@ export const Item = styled.div`
   &:last-child{
     padding-top: 1.5em;
     z-index: 500;
+    position: relative;
     &:hover{
       & ${Propuesta1Hover}{
         opacity: 1;
@@ -151,7 +153,7 @@ export const Subitle = styled.h3`
   margin: 0;
   z-index: 500;
   @media(${mobile}){
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `
 export const Cursor = styled.div`
@@ -178,9 +180,9 @@ export const Btn = styled(Link)`
 export const Propuesta1 = styled.img`
   z-index: 20;
   position: absolute;
-  bottom: -3em;
-  width: 30% !important;
-  right: 10em;
+  bottom: -6em;
+  width: 80% !important;
+  right: 2em;
   transform: rotateZ(180deg) rotateX(180deg);
   @media(${mobile}){
     bottom: -6em;
@@ -188,6 +190,7 @@ export const Propuesta1 = styled.img`
     right: 20%;
   }
   @media(${min}){
-    right: -2em;
+    bottom: -2em;
+    right: 0;
   }
 `

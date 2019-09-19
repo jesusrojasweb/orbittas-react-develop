@@ -1,12 +1,8 @@
 import styled from 'styled-components'
-import {colorPrincipal, fuentePrincipal, colorFluerecente, mobile} from '../../styles/variables'
+import {colorPrincipal, fuentePrincipal, colorFluerecente, mobile, colorOscuro} from '../../styles/variables'
 
 export const FooterContainer = styled.footer`
-  background: ${colorPrincipal};
-  padding: 2em 6em 1em;
-  @media(${mobile}){
-    padding: 2em 2em 1em;
-  }
+  background: ${colorOscuro};
 `
 
 export const Grid = styled.div`
@@ -14,15 +10,32 @@ export const Grid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5em;
   justify-items: center;
+  padding: 2em 6em 2em;
   @media(${mobile}){
     grid-gap: 2em;
     grid-template-columns: 1fr;
+    padding: 2em 2em 1em;
   }
 `
 
 export const Item = styled.div`
-  display: flex;
-  justify-content: center;
+  &:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    
+  }
+  @media(${mobile}){
+
+    &:nth-of-type(2), &:nth-of-type(3){
+      display: block;
+    }
+    &:nth-of-type(2){
+      grid-row-start: 1;
+    }
+    &:nth-of-type(3){
+      grid-row-start: 2;
+    }
+  }
 `
 
 export const Img = styled.img`
@@ -41,7 +54,9 @@ export const Title = styled.h3`
 export const Copy = styled.p`
   text-align: center;
   color: white;
-  margin-top: 2em;
+  padding: 1em;
+  margin: 0;
+
 `
 
 export const Ul = styled.ul`

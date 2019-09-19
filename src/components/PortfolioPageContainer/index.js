@@ -5,18 +5,23 @@ import {ParticulasBajo} from '../PartitulasBajo'
 // import {proyectos} from '../../../api/db'
 import {Caja} from './Ilustracion'
 import {getItems} from '../../hooks/getItems'
+import Context from '../../Context'
+import {useTranslate} from 'react-translate'
 
-export const PortfolioPageContainer = ({lang})=>{
+export const PortfolioPageContainer = ({idioma})=>{
   const [elec, setElec] = useState(false)
   const [web, setWeb] = useState(false)
   const [movil, setMovil] = useState(false)
 
   const [loading, setLoading] = useState(false)
-  const [proyectos, errorProyectos] = getItems(`${process.env.URL}/proyectos`,setLoading)
+  const [proyectosSearch, errorProyectos] = getItems(`${process.env.URL}/proyectos`,setLoading)
+  const [proyectos, setProyectos] = useState([])
 
   let servicio = window.location.search
   let search = servicio.split('?').join('').split('=').join('')
   let proyectShowed = proyectos;
+
+  const t = useTranslate('portfolio')
 
   if(search){
     proyectShowed = proyectos.filter(proyecto => proyecto.servicio === search)
@@ -32,20 +37,35 @@ export const PortfolioPageContainer = ({lang})=>{
       <Grid>
         <Item>
           <Menu>
-            <ListItem activo={true}><Anchor to="/portfolio?=proyecto">
-          Gestion de Proyectos</Anchor></ListItem>
+            <ListItem activo={true}><Anchor to="/portfolio?=proyecto">{t('proyect')}</Anchor></ListItem>
             <ListItem><Anchor activo={search === 'electronica'} to="/portfolio?=electronica">
-              <Icono><ElecI/></Icono>Electronica </Anchor> </ListItem>
+              <Icono><ElecI/></Icono>{t('elect')}</Anchor> </ListItem>
             <ListItem>
-              <Anchor activo={search === 'web'} to="/portfolio?=web"><Icono><WebI/></Icono>Web </Anchor> </ListItem>
+              <Anchor activo={search === 'web'} to="/portfolio?=web"><Icono><WebI/></Icono>{t('web')} </Anchor> </ListItem>
             <ListItem><Anchor activo={search === 'movil'} to="/portfolio?=movil">
-              <Icono><MovilI/></Icono>Movil </Anchor> </ListItem>
+              <Icono><MovilI/></Icono>{t('mobile')}</Anchor> </ListItem>
             {/*<ListItem><Anchor to="/portfolio?=diseno">
               <Icono><Caja/></Icono>
               Diseño </Anchor> </ListItem>*/}
           </Menu>
         </Item>
-        <PortafolioContainer lang={lang} pagina={true} proyectos={proyectShowed}/>
+        <Context.Consumer>
+          {
+            ({proyects, handleProyects})=>{
+              if(proyects[0] != undefined){
+                setProyectos(proyects)
+              }else{
+                if(proyectosSearch[0]!= undefined){
+                  handleProyects(proyectosSearch)
+                  setProyectos(proyectosSearch)
+                }
+              }
+              return (
+                <PortafolioContainer idioma={idioma} pagina={true} proyectos={proyectShowed}/>
+              )
+            }
+          }
+        </Context.Consumer>
       </Grid>
     </Portafolio>
     

@@ -12,7 +12,7 @@ export const AboutHome =()=>{
       <About>
         <ParticulasBajo/>
         <Grid>
-          <Title>Conoce nuestro equipo:</Title>
+          <Title>{t('title')}</Title>
           <Item>
             <Contenedor>
               <Descripcion>{t('firstParagraph')}</Descripcion>

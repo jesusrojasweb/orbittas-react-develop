@@ -1,7 +1,7 @@
 {
     "locale": "es",
     "menu":{
-        "about": "Quienes somos",
+        "about": "Quiénes somos",
         "services": "Servicios",
         "portfolio": "portafolio",
         "contact": "contacto"
@@ -14,15 +14,17 @@
         "tagline": "Nosotros la desarrollamos"
     },
     "aboutHomePage":{
+        "title": "Conoce nuestro equipo:",
         "firstParagraph": "Somos un equipo apasionado por la tecnología e innovación, conformado por profesionales en diversas áreas.",
         "secondParagraph": "Nos centramos en utilizar la tecnología para ayudarte a alcanzar tus metas, manteniendo una relación cercana, conectándonos contigo y potenciando en conjunto.",
         "expert": "Equipo Experto",
         "quality": "Proyectos Innovadores",
         "efficiency": "Planeación efectiva",
         "solutions": "Soluciones acertadas",
-        "button": "Conocenos"
+        "button": "Conócenos"
     },
     "servicesName":{
+        "title": "Te apoyamos con desarrollos en diversas áreas",
         "proyects": "Gestión de Proyectos",
         "electronic": "Dispositivos Electrónicos",
         "web": "Aplicaciones WEB",
@@ -36,7 +38,11 @@
         "movilDescription": "Tu empresa en dispositivos móviles con herramientas de última generación."
     },
     "portfolioHomePage": {
+        "title": "Conoce algunos de nuestros trabajos",
         "button": "Ver Más"
+    },
+    "testimoniosPage":{
+        "title": "Mira lo que dicen quienes ya nos conocen"
     },
     "contactHomePage":{
         "title": "Nuestro equipo experto",
@@ -45,10 +51,12 @@
         "develop": "Planea el desarrollo",
         "plan": "Ejecuta el plan",
         "together": "Te acompaña en la implementación",
-        "button": "Contactanos",
+        "button": "Contáctanos",
         "phone": "Telefono"
     },
-    "copyRight":{
+    "footer":{
+        "info": "Información",
+        "social": "Redes Sociales",
         "copy": "Todos los derechos reservados"
     },
     "heroAboutPage":{
@@ -58,14 +66,17 @@
         "secondDescription": "Practicamos el intercambio constante de ideas a nivel global, lo cual nos permite mantenernos a la vanguardia de las tendencias actuales. "
     },
     "valoresAboutPage":{
-        "empathy": "Empatia",
+        "empathy": "Empatía",
         "passion": "Pasión",
         "focus": "Enfoque",
         "teamwork": "Equipo",
-        "empathyDescription": "Generamos ambiente de confianza, nos conectamo contigo para entender tu negocio y necesidades.",
+        "empathyDescription": "Generamos ambiente de confianza, nos conectamos contigo para entender tu negocio y necesidades.",
         "passionDescription": "Creemos que el éxito de un proyecto, radica en creer en él y apostar con plenitud por hacerlo realidad.",
         "focusDescription": "Mantenemos objetivos claros y los esfuerzos totalmente direccionados a cumplirlos con éxito.",
         "teamDesciption": "Nos adaptamos a las comunicaciones efectivas que facilitan los procesos y avances cooperativos. "
+    },
+    "teamAboutPage":{
+        "title": "Nuestro equipo"
     },
     "heroServicesPage":{
         "firstTitle": "Tecnología de",
@@ -73,12 +84,18 @@
         "firstDescription": "En Orbittas desarrollamos proyectos que involucran diferentes áreas de la tecnología, entendiendo que la integración de las mismas es la fuerza del futuro.",
         "secondDescription": "Nuestra diversidad y flexibilidad nos potencia a obtener capacidad de respuesta rápida y ágil ante las demandas actuales."
     },
+    "portfolio":{
+        "proyect": "Gestión de proyectos",
+        "elect": "Electrónica",
+        "web": "Web",
+        "mobile": "Móvil"
+    },
     "contactoPage": {
-        "title": "Cuentanos tu idea",
+        "title": "Cuéntanos tu idea",
         "name": "Tu nombre",
         "proyect": "Proyecto",
         "email": "Tu Email", 
-        "idea": "Cuentanos tu idea",
+        "idea": "Cuéntanos tu idea",
         "button": "Orbittemos"
     }
 }

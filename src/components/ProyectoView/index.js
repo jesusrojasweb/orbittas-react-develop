@@ -2,10 +2,10 @@ import React from 'react'
 import {Proyecto} from '../Proyecto'
 import PropTypes from 'prop-types'
 
-export const ProyectoView = ({proyecto, lang})=>{
+export const ProyectoView = ({proyecto, idioma})=>{
   console.log(proyecto)
   return(
-    <Proyecto {...proyecto} lang={lang} />
+    <Proyecto {...proyecto} idioma={idioma} />
   )
 }
 

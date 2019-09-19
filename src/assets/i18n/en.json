@@ -14,6 +14,7 @@
         "tagline": "We develop it"
     },
     "aboutHomePage":{
+        "title": "Meet our team:", 
         "firstParagraph": "We are a team passionate about technology and innovation, made up of professionals in many areas.",
         "secondParagraph": "We focus on fluid and adaptable behavior, transcending borders, maintaining a close relationship with our clients to achieve a perfect synergy, in which the process is enjoyed and the result is obtained above those affected.",
         "expert": "Expert Team",
@@ -23,6 +24,7 @@
         "button": "Know about us"
     },
     "servicesName":{
+        "title": "We support you with developments in severals areas",
         "proyects": "Project management",
         "electronic": "Electronic Development",
         "web": "Web development",
@@ -37,19 +39,25 @@
     },
     
     "portfolioHomePage": {
+        "title":"Meet some of our works",
         "button": "see more"
+    },
+    "testimoniosPage":{
+        "title": "Look what those who already know us say"
     },
     "contactHomePage":{
         "title": "Our expert team",
-        "listen": "Te escucha",
-        "research": "He hears you",
+        "listen": "He hears you",
+        "research": "Carry out the study and plan the development",
         "develop": "Plan the development",
         "plan": "Execute the plan",
         "together": "We accompany you in the implementation",
         "button": "Contact us",
         "phone": "Phone Number"
     },
-    "copyRight":{
+    "footer":{
+        "info": "Information",
+        "social": "Social networks",
         "copy": "All rights reserved"
     },
     "heroAboutPage":{
@@ -78,11 +86,20 @@
         "focusDescription": "We maintain clear objectives and fully directed efforts to achieve them successfully.",
         "teamDesciption": "We adapt to effective communications that facilitate cooperative processes and advances. "
     },
+    "teamAboutPage":{
+        "title": "Our Team"
+    },
     "heroServicesPage":{
         "firstTitle": "Cutting-edge ",
         "secondTitle": "technology",
         "firstDescription": "In Orbittas we develop projects that involve different areas of technology, understanding that their integration is the force of the future.",
         "secondDescription": "Our diversity and flexibility empowers us to obtain rapid and agile response capacity to current demands."
+    },
+    "portfolio":{
+        "proyect": "Projects management",
+        "elect": "Electronic",
+        "web": "Web",
+        "mobile": "Mobile"
     },
     "contactoPage": {
         "title": "Tell us your idea",

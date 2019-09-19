@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import {Conexion} from '../Conexion'
 
 import {Servicio, Item, Grid, Head, Icono, Nombre, Lista, ListItem, Img, Btn} from './styles'
 
@@ -30,26 +31,55 @@ const SERVICIO_DEFAULT = [
     "nombre": "Desarrollo de herramientas genrenciales"
   },
 ]
+let contador = 0
 
-export const Service = ({right= true, img = IMAGEN_DEFAULT,imagenServicio, nombre= NOMBRE_DEFAULT, servicios = SERVICIO_DEFAULT, id})=>{
+export const Service = ({right= true, img = IMAGEN_DEFAULT,imagenServicio, nombre= NOMBRE_DEFAULT, id, idioma, es, en, nombreEn})=>{
+  
+  let servicios
+  idioma ? servicios = en : servicios = es
+
+  const Info = ()=>(
+    <Item>
+      <Head>
+        <Icono>
+          <img src={img} alt="nombre"/>
+        </Icono>
+        {
+          idioma
+          ? <Nombre>{nombreEn}</Nombre>
+          : <Nombre>{nombre}</Nombre>
+        }
+      </Head>
+      <div>
+        <Lista grid={servicios.length > 8}>
+        {
+          servicios.length > 8
+          ? <Fragment>
+              <div>
+                {servicios.slice(0,8).map(servicio =><ListItem key={servicio.id}>{servicio.nombre}</ListItem>)}
+              </div>
+              <div>
+                {servicios.slice(9,servicios.length).map(servicio =><ListItem key={servicio.id}>{servicio.nombre}</ListItem>)}
+              </div>
+            </Fragment>
+          : servicios.map(servicio =><ListItem key={servicio.id}>{servicio.nombre}</ListItem>)
+          
+        }
+        </Lista>
+        {
+          idioma
+          ? <Btn to={`/portfolio?=${id}`}>Go to portfolio</Btn>
+          : <Btn to={`/portfolio?=${id}`}>Ir al portafolio</Btn>
+        }
+        
+      </div>
+    </Item>
+  )
+
   const ServicioRight = ()=>(
     <Servicio right={right} id={id}>
       <Grid>
-        <Item>
-          <Head>
-            <Icono>
-              <img src={img} alt="nombre"/>
-            </Icono>
-            <Nombre>{nombre}</Nombre>
-          </Head>
-          <div>
-            <Lista>
-              {servicios.map(servicio =><ListItem key={servicio.id}>{servicio.nombre}</ListItem>
-              )}
-            </Lista>
-            <Btn to={`/portfolio?=${id}`}>Ir al portafolio</Btn>
-          </div>
-        </Item>
+        <Info/>
         <Item><Img src={imagenServicio} alt={`${nombre} imagen`}/></Item>
       </Grid>
     </Servicio>
@@ -58,22 +88,9 @@ export const Service = ({right= true, img = IMAGEN_DEFAULT,imagenServicio, nombr
     <Servicio right={right} id={id}>
       <Grid>
         <Item><Img src={imagenServicio} alt={`${nombre} imagen`}/></Item>
-        <Item>
-          <Head>
-            <Icono>
-              <img src={img} alt="nombre"/>
-            </Icono>
-            <Nombre>{nombre}</Nombre>
-          </Head>
-          <div>
-            <Lista>
-            {servicios.map(servicio =><ListItem key={servicio.id}>{servicio.nombre}</ListItem>
-            )}
-            </Lista>
-            <Btn to={`/portfolio?=${id}`}>Ir al portafolio</Btn>
-          </div>
-        </Item>
+        <Info/>
       </Grid>
+      <Conexion/>
     </Servicio>
   )
   return(

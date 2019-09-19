@@ -7,7 +7,7 @@ export default ({idioma, navigate})=>{
   return (
     <Fragment>
       <HeroServicios idioma={idioma} />
-      <ServiciosContainer/>
+      <ServiciosContainer idioma={idioma}/>
     </Fragment>
   )
 }

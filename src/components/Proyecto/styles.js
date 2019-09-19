@@ -61,6 +61,7 @@ export const Volver = styled(Link)`
   @media(${mobile}){
     left: 1em;
     top: 2.8em;
+    margin-left: -1em;
   }
   &:hover{
     background: none;

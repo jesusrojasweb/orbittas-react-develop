@@ -5,23 +5,21 @@ import {ProyectoServicios} from './Ilustraciones'
 import {servicios} from '../../../../api/db.json'
 import {smoothScroll} from '../../../hooks/smoothScroll'
 
-export const ServiciosContainer = ()=>{
+export const ServiciosContainer = ({idioma})=>{
   
   useEffect(()=>{
-
-    const id=  window.location.hash.split('#')[1]
-    console.log(id)
+    window.scrollBy(0, -window.innerHeight);
+    const id =  window.location.hash.split('#')[1]
     
     if(id){
       smoothScroll(id,1000)
     }
-  }
-    ,[false])
+  },[])
 
   return(
     <Fragment>
       {
-        servicios.map((servicio)=> <Service {...servicio} SvgImage={ProyectoServicios}/>)
+        servicios.map((servicio)=> <Service {...servicio} SvgImage={ProyectoServicios} idioma={idioma}/>)
       }
       
     </Fragment>

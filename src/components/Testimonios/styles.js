@@ -1,6 +1,50 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 import {Margen} from '../../styles/Styles'
 import {colorPrincipal, tituloSecundario, mobile, min} from '../../styles/variables'
+
+export const Circulo = styled.div`
+  background: ${colorPrincipal};
+  width: 47.5px;
+  height: 47.5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  margin-left: -3px;
+`
+
+
+const botones = (right, left)=> css`
+  background: ${colorPrincipal};
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  ${right && `right: 7em;` }
+  ${left && `left: 7em;`}
+  top: 50%;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+  z-index: 20;
+  background: none;
+  border: 1px solid ${colorPrincipal};
+  &:focus{
+    outline: none;
+  }
+  @media(${mobile}){
+    ${right && `right: -3em;` }
+    ${left && `left: -3em;`}
+    border: none;
+    & ${Circulo}{
+      background: none;
+      color: #b2adad;
+      font-size: 1.5rem;
+    }
+  }
+`
 
 export const TestimoniosContainer = styled.section`
   background: white;
@@ -12,12 +56,14 @@ export const TestimoniosContainer = styled.section`
   }
   @media(${min}){
     padding: 2em 2em 6em;
-    height: 1300px !important;
+    height: 950px !important;
   }
 `
 export const Title = styled.h2`
   color: ${colorPrincipal};
   font-family: ${tituloSecundario};
+  text-transform: uppercase;
+  font-size: 1.17rem;
 `
 
 export const Banner = styled.div`
@@ -36,58 +82,9 @@ export const Container = styled.div`
 `
 
 export const Right = styled.button`
-  background: ${colorPrincipal};
-  position: absolute;
-  width: 55px;
-  height: 55px;
-  right: 7em;
-  top: 50%;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  transition: .3s;
-  z-index: 20;
-  background: none;
-  border: 1px solid ${colorPrincipal};
-  &:focus{
-    outline: none;
-  }
-  @media(${mobile}){
-    right: 0;
-  }
+  ${botones(true, false)}
 `
 
 export const Left = styled.button`
-  position: absolute;
-  width: 55px;
-  height: 55px;
-  color: white;
-  left: 7em;
-  top: 50%;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  transition: .3s;
-  z-index: 20;
-  background: none;
-  border: 1px solid ${colorPrincipal};
-  &:focus{
-    outline: none;
-  }
-  @media(${mobile}){
-    left: 0;
-  }
-`
-
-export const Circulo = styled.div`
-  background: ${colorPrincipal};
-  width: 47.5px;
-  height: 47.5px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  position: relative;
-  margin-left: -3px;
+  ${botones(false, true)}
 `

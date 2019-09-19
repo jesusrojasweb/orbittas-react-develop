@@ -99,7 +99,7 @@ export const Formulario = styled.form`
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-top: 3em;
+  margin-top: 6em;
   padding: 0;
   @media(${tablet}){
     margin-top: 0;
@@ -167,7 +167,7 @@ export const Linea = styled.div`
   grid-template-columns: 5fr 1fr 1fr;
   grid-gap: 2em;
   align-items: center;
-  z-index: 1000;
+  z-index: 800;
   @media(${mobile}){
     grid-column: 1/ 2;
     grid-template-columns: 2fr 9fr;
@@ -190,7 +190,7 @@ export const Btn = styled.button`
   ${btn()}
   background: none;
   padding: .8em 1.5em;
-  z-index: 900;
+  z-index: 800;
 
   &:hover{
     border-color: ${colorFluerecente};
@@ -237,7 +237,7 @@ export const Imagen = styled.div`
   }
 `
 export const ImageRotate = styled.img`
-  ${rotate}
+  background: none;
 `
 export const Img = styled.img`
   border-radius: 50%;

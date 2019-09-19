@@ -5,12 +5,12 @@ import Reacr from 'react'
 import {PortfolioPageContainer} from '../components/PortfolioPageContainer'
 
 
-export default ({lang})=>{
+export default ({idioma})=>{
   return (
     <SEO
       title="Portafolio"
     >
-      <PortfolioPageContainer lang={lang}/>
+      <PortfolioPageContainer idioma={idioma}/>
     </SEO>
   )
 }

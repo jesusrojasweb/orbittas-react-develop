@@ -23,7 +23,7 @@ export const Proyecto = (proyecto)=>{
   //     setScroll(false)
   //   }
   // }, [scroll])
-  const {slogan, src, nombre, descripcionShort} = proyecto
+  const {slogan, src, nombre, descripcionShort,idioma, sloganEn, descripcionShortEn, nombreEn} = proyecto
 
   useEffect(() => {
     handleScroll()
@@ -68,20 +68,27 @@ export const Proyecto = (proyecto)=>{
                 <img src={src} alt="p4b"/>
               </Imagen>
               <Item>
-                {slogan
-                  ? <Caption>{slogan}</Caption>
-                  : <br/>
+                {
+                  idioma
+                  ? <Fragment>
+                      <Caption>{sloganEn}</Caption>
+                      <Nombre>{nombreEn}</Nombre>
+                      <Descripcion>{descripcionShortEn}</Descripcion>
+                    </Fragment>
+                  : <Fragment>
+                      <Caption>{slogan}</Caption>
+                      <Nombre>{nombre}</Nombre>
+                      <Descripcion>{descripcionShort}</Descripcion>
+                    </Fragment>
                 }
                 
-                <Nombre>{nombre}</Nombre>
-                <Descripcion>{descripcionShort}</Descripcion>
                 <Boton onClick={()=> showDetail()} href="#"><Texto>Scroll para la información del proyecto</Texto> <Icono><ScrollIcon/> </Icono></Boton>
               </Item>
             
           </Fragment>
         }
       </Grid>
-      <ProyectoDetails id="details" mostrar={show} handleMostrar={setShow} {...proyecto}/>
+      <ProyectoDetails id="details" mostrar={show} handleMostrar={setShow} {...proyecto} idioma={idioma}/>
     </ProyectoContainer>
   )
 }

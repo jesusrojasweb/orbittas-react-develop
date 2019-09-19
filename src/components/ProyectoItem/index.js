@@ -5,12 +5,16 @@ import {Proyecto, Imagen,Caracteristicas, Nombre} from "./styles";
 
 const DEFAULT_IMAGE = 'https://jesusrojasweb.github.io/orbittas/img/mockup-p4b.png';
 
-export const ProyectoItem = (({lang,_id, nombre = 'P4b', src = DEFAULT_IMAGE, caracteristicas= 'Wordpress', link='/portfolio/proyecto'})=>{
-  
+export const ProyectoItem = (({_id, nombre = 'P4b', src = DEFAULT_IMAGE, caracteristicas= 'Wordpress', link='/portfolio/proyecto', idioma, nombreEn})=>{
 
   return(
     <Proyecto to={`/portfolio/${_id}-${link}`}>
-      <Nombre>{nombre}</Nombre>
+      {
+        idioma
+        ? <Nombre>{nombreEn}</Nombre>
+        : <Nombre>{nombre}</Nombre>
+      }
+      
       <Imagen>
         <img src={src} alt={`${nombre} imagen`}/>
 

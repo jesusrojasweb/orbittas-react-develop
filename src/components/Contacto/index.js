@@ -112,7 +112,7 @@ export const ContactoPage = (props)=>{
               {/*<Animanos>{t('title')}</Animanos>*/}
               {/*!success*/}
               <Imagen>
-                <Img src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fquienes-somos.png?alt=media&token=2b1c74a4-c340-46c7-bcec-e9cfa6e12410" alt=""/>
+                <Img src="https://firebasestorage.googleapis.com/v0/b/pagina-oribttas.appspot.com/o/files%2Fcontacto-imagen.png?alt=media&token=3a9b7724-1657-4e8d-9340-4c8c95e046b7" alt=""/>
                 <ImageRotate src="https://jesusrojasweb.github.io/orbittas/img/somos.png" alt=""/>
               </Imagen>
             </div>

@@ -22,6 +22,8 @@ export const LoaderCircleItem = styled.div`
 export const Equipo = styled.section`
   background: ${colorPrincipal};
   height: auto;
+  position: relative;
+  overflow: hidden;
 `
 export const Contenedor = styled.div`
   ${Margen}

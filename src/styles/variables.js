@@ -3,6 +3,7 @@ import {css} from 'styled-components'
 export const colorPrincipal = '#007993';
 export const colorSecundario = '#009270';
 export const colorFluerecente = '#00caf5';
+export const colorOscuro = '#035b6e';
 export const fuentePrincipal = "'Dolce Vita', system-ui";
 export const fuenteSecundaria ="'Arlon', system-ui";
 export const tituloSecundario ="'Comfortaa', system-ui";

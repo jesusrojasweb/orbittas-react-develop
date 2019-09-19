@@ -53,7 +53,7 @@ export const Item = styled.div`
   z-index: 800;
   &:nth-of-type(1){
     align-self: start;
-    margin-top: 2em;
+    margin-top: 1em;
   }
 `
 
@@ -63,7 +63,7 @@ export const Menu = styled.ul`
   @media(${mobile}){
     display: flex;
     flex-flow: wrap;
-    margin-top: 1em;
+    margin-top: 0;
   }
 `
 

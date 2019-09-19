@@ -14,7 +14,7 @@ export default ({idioma})=>{
     >
       <HeroAbout idioma={idioma}/>
       <ValoresAbout/>
-      <EquipoAbout/>
+      <EquipoAbout idioma={idioma}/>
     </SEO>
   )
 }

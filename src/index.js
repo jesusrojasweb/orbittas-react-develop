@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import firebase from 'firebase'
 import ReactGA from 'react-ga'
+import Context from './Context'
 
 // import './global.css';
 import {App} from './App';
@@ -23,4 +24,8 @@ ReactGA.pageview(window.location.pathname + window.location.search)
 
 const container = document.getElementById('app');
 
-ReactDOM.render(<App/>,container)
+ReactDOM.render(
+  <Context.Provider>
+    <App/>
+  </Context.Provider>
+  ,container)
