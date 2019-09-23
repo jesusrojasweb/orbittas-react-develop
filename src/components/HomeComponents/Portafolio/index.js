@@ -13,7 +13,8 @@ import Context from '../../../Context'
 export const PortafolioHome = ({idioma})=>{
   const [loading, setLoading] = useState(false)
   const [proyectos, errorProyectos] = getItems(`${process.env.URL}/proyectos`,setLoading)
-  const proyect = proyectos.slice(0,4)
+  const filtrar = proyectos.filter(({estado})=> estado === 'finalizado' )
+  const proyect = filtrar.slice(0,4)
   if(loading){
     console.log('cargando proyectos')
   } else{
@@ -26,7 +27,7 @@ export const PortafolioHome = ({idioma})=>{
       {
         ({handleProyects})=>{
           if(proyectos[0] != undefined){
-            handleProyects(proyectos)
+            handleProyects(filtrar)
           }
           return (
             <Portafolio>

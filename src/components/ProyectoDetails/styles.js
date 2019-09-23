@@ -81,6 +81,9 @@ export const Nombre = styled.h2`
 export const Skills = styled.div`
   display: flex;
   justify-content: space-between;
+  @media(${mobile}){
+    flex-direction: column;
+  }
 `
 export const Item = styled.h4`
   color: ${colorPrincipal};

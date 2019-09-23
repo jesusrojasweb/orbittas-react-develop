@@ -56,8 +56,9 @@ export const PortfolioPageContainer = ({idioma})=>{
                 setProyectos(proyects)
               }else{
                 if(proyectosSearch[0]!= undefined){
-                  handleProyects(proyectosSearch)
-                  setProyectos(proyectosSearch)
+                  let filtrar = proyectosSearch.filter(({estado})=> estado === 'finalizado')
+                  handleProyects(filtrar)
+                  setProyectos(filtrar)
                 }
               }
               return (

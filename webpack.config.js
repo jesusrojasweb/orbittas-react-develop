@@ -2,8 +2,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackPwaManifestPlugin = require('webpack-pwa-manifest')
 const path = require('path')
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports={
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
   output: {
     filename: 'app.bundle.js',
     publicPath: '/'

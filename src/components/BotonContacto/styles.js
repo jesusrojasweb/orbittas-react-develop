@@ -25,6 +25,10 @@ export const Boton = styled.a`
   }
   @media(${mobile}){
     right: .25em;
+    width: 1.25em;
+    height: 1.25em;
+    font-size: 2rem;
     bottom: .5em;
+    box-sizing: border-box;
   }
 `
